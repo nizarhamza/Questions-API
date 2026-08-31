@@ -1,0 +1,52 @@
+{"id": "sci-e-0001", "q": "What is the atomic number of silver?", "o": ["127", "161", "103", "47"], "a": 3, "e": "silver has atomic number 47.", "t": ["science", "element-atomic-number"]}
+{"id": "sci-e-0002", "q": "How many protons does an atom of tin have?", "o": ["99", "165", "136", "50"], "a": 3, "e": "tin has atomic number 50.", "t": ["science", "element-atomic-number"]}
+{"id": "sci-e-0003", "q": "What is the atomic number of uranium?", "o": ["39", "14", "38", "92"], "a": 3, "e": "uranium has atomic number 92.", "t": ["science", "element-atomic-number"]}
+{"id": "sci-e-0004", "q": "What is the atomic number of hydrogen?", "o": ["99", "169", "124", "1"], "a": 3, "e": "hydrogen has atomic number 1.", "t": ["science", "element-atomic-number"]}
+{"id": "sci-e-0005", "q": "What is the atomic number of helium?", "o": ["2", "97", "146", "104"], "a": 0, "e": "helium has atomic number 2.", "t": ["science", "element-atomic-number"]}
+{"id": "sci-e-0006", "q": "How many protons does an atom of lithium have?", "o": ["97", "3", "120", "135"], "a": 1, "e": "lithium has atomic number 3.", "t": ["science", "element-atomic-number"]}
+{"id": "sci-e-0007", "q": "How many protons does an atom of beryllium have?", "o": ["99", "4", "97", "149"], "a": 1, "e": "beryllium has atomic number 4.", "t": ["science", "element-atomic-number"]}
+{"id": "sci-e-0008", "q": "How many protons does an atom of carbon have?", "o": ["113", "163", "118", "6"], "a": 3, "e": "carbon has atomic number 6.", "t": ["science", "element-atomic-number"]}
+{"id": "sci-e-0009", "q": "How many protons does an atom of nitrogen have?", "o": ["98", "172", "7", "145"], "a": 2, "e": "nitrogen has atomic number 7.", "t": ["science", "element-atomic-number"]}
+{"id": "sci-e-0010", "q": "How many protons does an atom of oxygen have?", "o": ["129", "110", "135", "8"], "a": 3, "e": "oxygen has atomic number 8.", "t": ["science", "element-atomic-number"]}
+{"id": "sci-e-0011", "q": "What is the atomic number of fluorine?", "o": ["9", "98", "142", "141"], "a": 0, "e": "fluorine has atomic number 9.", "t": ["science", "element-atomic-number"]}
+{"id": "sci-e-0012", "q": "How many protons does an atom of neon have?", "o": ["99", "161", "157", "10"], "a": 3, "e": "neon has atomic number 10.", "t": ["science", "element-atomic-number"]}
+{"id": "sci-e-0013", "q": "What is the atomic number of sodium?", "o": ["98", "99", "11", "126"], "a": 2, "e": "sodium has atomic number 11.", "t": ["science", "element-atomic-number"]}
+{"id": "sci-e-0014", "q": "What is the atomic number of magnesium?", "o": ["99", "12", "148", "160"], "a": 1, "e": "magnesium has atomic number 12.", "t": ["science", "element-atomic-number"]}
+{"id": "sci-e-0015", "q": "What is the atomic number of aluminium?", "o": ["158", "103", "13", "148"], "a": 2, "e": "aluminium has atomic number 13.", "t": ["science", "element-atomic-number"]}
+{"id": "sci-e-0016", "q": "How many protons does an atom of silicon have?", "o": ["97", "98", "14", "104"], "a": 2, "e": "silicon has atomic number 14.", "t": ["science", "element-atomic-number"]}
+{"id": "sci-e-0017", "q": "What is the atomic number of phosphorus?", "o": ["97", "15", "165", "161"], "a": 1, "e": "phosphorus has atomic number 15.", "t": ["science", "element-atomic-number"]}
+{"id": "sci-e-0018", "q": "How many protons does an atom of iron have?", "o": ["98", "26", "138", "105"], "a": 1, "e": "iron has atomic number 26.", "t": ["science", "element-atomic-number"]}
+{"id": "sci-e-0019", "q": "What is the atomic number of sulfur?", "o": ["16", "99", "111", "149"], "a": 0, "e": "sulfur has atomic number 16.", "t": ["science", "element-atomic-number"]}
+{"id": "sci-e-0020", "q": "What is the atomic number of potassium?", "o": ["97", "167", "19", "124"], "a": 2, "e": "potassium has atomic number 19.", "t": ["science", "element-atomic-number"]}
+{"id": "sci-e-0021", "q": "What is the atomic number of calcium?", "o": ["157", "20", "113", "163"], "a": 1, "e": "calcium has atomic number 20.", "t": ["science", "element-atomic-number"]}
+{"id": "sci-e-0022", "q": "What is the atomic number of lead?", "o": ["82", "20", "28", "25"], "a": 0, "e": "lead has atomic number 82.", "t": ["science", "element-atomic-number"]}
+{"id": "sci-e-0023", "q": "How many protons does an atom of copper have?", "o": ["29", "171", "138", "108"], "a": 0, "e": "copper has atomic number 29.", "t": ["science", "element-atomic-number"]}
+{"id": "sci-e-0024", "q": "What is the atomic number of zinc?", "o": ["30", "169", "171", "106"], "a": 0, "e": "zinc has atomic number 30.", "t": ["science", "element-atomic-number"]}
+{"id": "sci-e-0025", "q": "How many protons does an atom of gold have?", "o": ["22", "12", "30", "79"], "a": 3, "e": "gold has atomic number 79.", "t": ["science", "element-atomic-number"]}
+{"id": "sci-e-0026", "q": "How many protons does an atom of mercury have?", "o": ["27", "16", "80", "15"], "a": 2, "e": "mercury has atomic number 80.", "t": ["science", "element-atomic-number"]}
+{"id": "sci-e-0027", "q": "What is the chemical symbol for silver?", "o": ["Ho", "Ag", "Lr", "Mc"], "a": 1, "e": "The chemical symbol for silver is Ag.", "t": ["science", "element-symbol"]}
+{"id": "sci-e-0028", "q": "On the periodic table, tin is written as which symbol?", "o": ["Nh", "Sn", "Tb", "Cn"], "a": 1, "e": "The chemical symbol for tin is Sn.", "t": ["science", "element-symbol"]}
+{"id": "sci-e-0029", "q": "On the periodic table, uranium is written as which symbol?", "o": ["O", "Cn", "Tb", "U"], "a": 3, "e": "The chemical symbol for uranium is U.", "t": ["science", "element-symbol"]}
+{"id": "sci-e-0030", "q": "On the periodic table, hydrogen is written as which symbol?", "o": ["Ho", "H", "Md", "Ds"], "a": 1, "e": "The chemical symbol for hydrogen is H.", "t": ["science", "element-symbol"]}
+{"id": "sci-e-0031", "q": "What is the chemical symbol for helium?", "o": ["Nh", "Fm", "He", "Lr"], "a": 2, "e": "The chemical symbol for helium is He.", "t": ["science", "element-symbol"]}
+{"id": "sci-e-0032", "q": "What is the chemical symbol for lithium?", "o": ["Nh", "Md", "Li", "Fm"], "a": 2, "e": "The chemical symbol for lithium is Li.", "t": ["science", "element-symbol"]}
+{"id": "sci-e-0033", "q": "On the periodic table, beryllium is written as which symbol?", "o": ["Be", "Md", "Fe", "Au"], "a": 0, "e": "The chemical symbol for beryllium is Be.", "t": ["science", "element-symbol"]}
+{"id": "sci-e-0034", "q": "What is the chemical symbol for carbon?", "o": ["C", "Er", "Pr", "Rg"], "a": 0, "e": "The chemical symbol for carbon is C.", "t": ["science", "element-symbol"]}
+{"id": "sci-e-0035", "q": "On the periodic table, nitrogen is written as which symbol?", "o": ["N", "Cm", "Lv", "Rg"], "a": 0, "e": "The chemical symbol for nitrogen is N.", "t": ["science", "element-symbol"]}
+{"id": "sci-e-0036", "q": "What is the chemical symbol for oxygen?", "o": ["Cn", "O", "Yb", "Nh"], "a": 1, "e": "The chemical symbol for oxygen is O.", "t": ["science", "element-symbol"]}
+{"id": "sci-e-0037", "q": "On the periodic table, fluorine is written as which symbol?", "o": ["F", "Bk", "Tm", "Ho"], "a": 0, "e": "The chemical symbol for fluorine is F.", "t": ["science", "element-symbol"]}
+{"id": "sci-e-0038", "q": "What is the chemical symbol for neon?", "o": ["Ts", "Ne", "Er", "Lr"], "a": 1, "e": "The chemical symbol for neon is Ne.", "t": ["science", "element-symbol"]}
+{"id": "sci-e-0039", "q": "What is the chemical symbol for sodium?", "o": ["Na", "Pr", "Nh", "Fm"], "a": 0, "e": "The chemical symbol for sodium is Na.", "t": ["science", "element-symbol"]}
+{"id": "sci-e-0040", "q": "On the periodic table, magnesium is written as which symbol?", "o": ["Yb", "No", "Uqb", "Mg"], "a": 3, "e": "The chemical symbol for magnesium is Mg.", "t": ["science", "element-symbol"]}
+{"id": "sci-e-0041", "q": "What is the chemical symbol for aluminium?", "o": ["Yb", "Pr", "Al", "Cn"], "a": 2, "e": "The chemical symbol for aluminium is Al.", "t": ["science", "element-symbol"]}
+{"id": "sci-e-0042", "q": "What is the chemical symbol for silicon?", "o": ["Md", "Cm", "Si", "Ds"], "a": 2, "e": "The chemical symbol for silicon is Si.", "t": ["science", "element-symbol"]}
+{"id": "sci-e-0043", "q": "What is the chemical symbol for phosphorus?", "o": ["P", "Ds", "No", "Cn"], "a": 0, "e": "The chemical symbol for phosphorus is P.", "t": ["science", "element-symbol"]}
+{"id": "sci-e-0044", "q": "On the periodic table, iron is written as which symbol?", "o": ["Ts", "Am", "Fe", "Fl"], "a": 2, "e": "The chemical symbol for iron is Fe.", "t": ["science", "element-symbol"]}
+{"id": "sci-e-0045", "q": "On the periodic table, sulfur is written as which symbol?", "o": ["Md", "S", "Rg", "Er"], "a": 1, "e": "The chemical symbol for sulfur is S.", "t": ["science", "element-symbol"]}
+{"id": "sci-e-0046", "q": "What is the chemical symbol for potassium?", "o": ["K", "Rg", "Er", "No"], "a": 0, "e": "The chemical symbol for potassium is K.", "t": ["science", "element-symbol"]}
+{"id": "sci-e-0047", "q": "On the periodic table, calcium is written as which symbol?", "o": ["Yb", "Tm", "Uqs", "Ca"], "a": 3, "e": "The chemical symbol for calcium is Ca.", "t": ["science", "element-symbol"]}
+{"id": "sci-e-0048", "q": "On the periodic table, lead is written as which symbol?", "o": ["Am", "Nh", "No", "Pb"], "a": 3, "e": "The chemical symbol for lead is Pb.", "t": ["science", "element-symbol"]}
+{"id": "sci-e-0049", "q": "On the periodic table, copper is written as which symbol?", "o": ["Lv", "Ds", "Cu", "Fm"], "a": 2, "e": "The chemical symbol for copper is Cu.", "t": ["science", "element-symbol"]}
+{"id": "sci-e-0050", "q": "On the periodic table, zinc is written as which symbol?", "o": ["Lr", "Ds", "Rg", "Zn"], "a": 3, "e": "The chemical symbol for zinc is Zn.", "t": ["science", "element-symbol"]}
+{"id": "sci-e-0051", "q": "What is the chemical symbol for gold?", "o": ["Md", "Au", "Bk", "Er"], "a": 1, "e": "The chemical symbol for gold is Au.", "t": ["science", "element-symbol"]}
+{"id": "sci-e-0052", "q": "On the periodic table, mercury is written as which symbol?", "o": ["No", "Fm", "Hg", "Ts"], "a": 2, "e": "The chemical symbol for mercury is Hg.", "t": ["science", "element-symbol"]}

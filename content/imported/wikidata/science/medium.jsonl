@@ -1,0 +1,82 @@
+{"id": "sci-m-0001", "q": "What is the atomic number of niobium?", "o": ["85", "41", "79", "89"], "a": 1, "e": "niobium has atomic number 41.", "t": ["science", "element-atomic-number"]}
+{"id": "sci-m-0002", "q": "What is the atomic number of molybdenum?", "o": ["12", "42", "13", "16"], "a": 1, "e": "molybdenum has atomic number 42.", "t": ["science", "element-atomic-number"]}
+{"id": "sci-m-0003", "q": "What is the atomic number of palladium?", "o": ["90", "46", "76", "65"], "a": 1, "e": "palladium has atomic number 46.", "t": ["science", "element-atomic-number"]}
+{"id": "sci-m-0004", "q": "What is the atomic number of cadmium?", "o": ["10", "20", "48", "13"], "a": 2, "e": "cadmium has atomic number 48.", "t": ["science", "element-atomic-number"]}
+{"id": "sci-m-0005", "q": "How many protons does an atom of antimony have?", "o": ["13", "51", "25", "29"], "a": 1, "e": "antimony has atomic number 51.", "t": ["science", "element-atomic-number"]}
+{"id": "sci-m-0006", "q": "What is the atomic number of tellurium?", "o": ["22", "91", "52", "82"], "a": 2, "e": "tellurium has atomic number 52.", "t": ["science", "element-atomic-number"]}
+{"id": "sci-m-0007", "q": "How many protons does an atom of plutonium have?", "o": ["67", "51", "94", "60"], "a": 2, "e": "plutonium has atomic number 94.", "t": ["science", "element-atomic-number"]}
+{"id": "sci-m-0008", "q": "How many protons does an atom of iodine have?", "o": ["53", "23", "31", "20"], "a": 0, "e": "iodine has atomic number 53.", "t": ["science", "element-atomic-number"]}
+{"id": "sci-m-0009", "q": "What is the atomic number of xenon?", "o": ["54", "31", "86", "78"], "a": 0, "e": "xenon has atomic number 54.", "t": ["science", "element-atomic-number"]}
+{"id": "sci-m-0010", "q": "How many protons does an atom of caesium have?", "o": ["55", "77", "98", "10"], "a": 0, "e": "caesium has atomic number 55.", "t": ["science", "element-atomic-number"]}
+{"id": "sci-m-0011", "q": "How many protons does an atom of barium have?", "o": ["94", "89", "17", "56"], "a": 3, "e": "barium has atomic number 56.", "t": ["science", "element-atomic-number"]}
+{"id": "sci-m-0012", "q": "How many protons does an atom of hafnium have?", "o": ["45", "34", "52", "72"], "a": 3, "e": "hafnium has atomic number 72.", "t": ["science", "element-atomic-number"]}
+{"id": "sci-m-0013", "q": "How many protons does an atom of tantalum have?", "o": ["73", "50", "95", "94"], "a": 0, "e": "tantalum has atomic number 73.", "t": ["science", "element-atomic-number"]}
+{"id": "sci-m-0014", "q": "What is the atomic number of radium?", "o": ["88", "50", "53", "43"], "a": 0, "e": "radium has atomic number 88.", "t": ["science", "element-atomic-number"]}
+{"id": "sci-m-0015", "q": "How many protons does an atom of radon have?", "o": ["42", "56", "68", "86"], "a": 3, "e": "radon has atomic number 86.", "t": ["science", "element-atomic-number"]}
+{"id": "sci-m-0016", "q": "What is the atomic number of boron?", "o": ["49", "74", "5", "59"], "a": 2, "e": "boron has atomic number 5.", "t": ["science", "element-atomic-number"]}
+{"id": "sci-m-0017", "q": "What is the atomic number of francium?", "o": ["55", "87", "42", "43"], "a": 1, "e": "francium has atomic number 87.", "t": ["science", "element-atomic-number"]}
+{"id": "sci-m-0018", "q": "How many protons does an atom of chlorine have?", "o": ["17", "95", "71", "66"], "a": 0, "e": "chlorine has atomic number 17.", "t": ["science", "element-atomic-number"]}
+{"id": "sci-m-0019", "q": "How many protons does an atom of argon have?", "o": ["83", "18", "57", "71"], "a": 1, "e": "argon has atomic number 18.", "t": ["science", "element-atomic-number"]}
+{"id": "sci-m-0020", "q": "What is the atomic number of scandium?", "o": ["72", "43", "52", "21"], "a": 3, "e": "scandium has atomic number 21.", "t": ["science", "element-atomic-number"]}
+{"id": "sci-m-0021", "q": "How many protons does an atom of titanium have?", "o": ["22", "72", "48", "54"], "a": 0, "e": "titanium has atomic number 22.", "t": ["science", "element-atomic-number"]}
+{"id": "sci-m-0022", "q": "How many protons does an atom of vanadium have?", "o": ["78", "51", "23", "52"], "a": 2, "e": "vanadium has atomic number 23.", "t": ["science", "element-atomic-number"]}
+{"id": "sci-m-0023", "q": "What is the atomic number of chromium?", "o": ["92", "24", "62", "64"], "a": 1, "e": "chromium has atomic number 24.", "t": ["science", "element-atomic-number"]}
+{"id": "sci-m-0024", "q": "What is the atomic number of manganese?", "o": ["57", "69", "44", "25"], "a": 3, "e": "manganese has atomic number 25.", "t": ["science", "element-atomic-number"]}
+{"id": "sci-m-0025", "q": "What is the atomic number of cobalt?", "o": ["47", "54", "27", "53"], "a": 2, "e": "cobalt has atomic number 27.", "t": ["science", "element-atomic-number"]}
+{"id": "sci-m-0026", "q": "What is the atomic number of tungsten?", "o": ["36", "52", "74", "31"], "a": 2, "e": "tungsten has atomic number 74.", "t": ["science", "element-atomic-number"]}
+{"id": "sci-m-0027", "q": "How many protons does an atom of nickel have?", "o": ["28", "58", "67", "88"], "a": 0, "e": "nickel has atomic number 28.", "t": ["science", "element-atomic-number"]}
+{"id": "sci-m-0028", "q": "How many protons does an atom of osmium have?", "o": ["54", "57", "76", "95"], "a": 2, "e": "osmium has atomic number 76.", "t": ["science", "element-atomic-number"]}
+{"id": "sci-m-0029", "q": "How many protons does an atom of gallium have?", "o": ["88", "31", "95", "12"], "a": 1, "e": "gallium has atomic number 31.", "t": ["science", "element-atomic-number"]}
+{"id": "sci-m-0030", "q": "How many protons does an atom of germanium have?", "o": ["84", "32", "75", "53"], "a": 1, "e": "germanium has atomic number 32.", "t": ["science", "element-atomic-number"]}
+{"id": "sci-m-0031", "q": "What is the atomic number of arsenic?", "o": ["82", "67", "33", "69"], "a": 2, "e": "arsenic has atomic number 33.", "t": ["science", "element-atomic-number"]}
+{"id": "sci-m-0032", "q": "What is the atomic number of selenium?", "o": ["96", "74", "77", "34"], "a": 3, "e": "selenium has atomic number 34.", "t": ["science", "element-atomic-number"]}
+{"id": "sci-m-0033", "q": "What is the atomic number of iridium?", "o": ["53", "46", "77", "38"], "a": 2, "e": "iridium has atomic number 77.", "t": ["science", "element-atomic-number"]}
+{"id": "sci-m-0034", "q": "What is the atomic number of bromine?", "o": ["70", "90", "35", "78"], "a": 2, "e": "bromine has atomic number 35.", "t": ["science", "element-atomic-number"]}
+{"id": "sci-m-0035", "q": "How many protons does an atom of platinum have?", "o": ["59", "78", "41", "48"], "a": 1, "e": "platinum has atomic number 78.", "t": ["science", "element-atomic-number"]}
+{"id": "sci-m-0036", "q": "How many protons does an atom of krypton have?", "o": ["91", "36", "95", "55"], "a": 1, "e": "krypton has atomic number 36.", "t": ["science", "element-atomic-number"]}
+{"id": "sci-m-0037", "q": "What is the atomic number of rubidium?", "o": ["37", "58", "19", "69"], "a": 0, "e": "rubidium has atomic number 37.", "t": ["science", "element-atomic-number"]}
+{"id": "sci-m-0038", "q": "How many protons does an atom of strontium have?", "o": ["77", "38", "63", "76"], "a": 1, "e": "strontium has atomic number 38.", "t": ["science", "element-atomic-number"]}
+{"id": "sci-m-0039", "q": "What is the atomic number of bismuth?", "o": ["36", "42", "57", "83"], "a": 3, "e": "bismuth has atomic number 83.", "t": ["science", "element-atomic-number"]}
+{"id": "sci-m-0040", "q": "How many protons does an atom of polonium have?", "o": ["47", "62", "43", "84"], "a": 3, "e": "polonium has atomic number 84.", "t": ["science", "element-atomic-number"]}
+{"id": "sci-m-0041", "q": "What is the atomic number of astatine?", "o": ["39", "85", "45", "58"], "a": 1, "e": "astatine has atomic number 85.", "t": ["science", "element-atomic-number"]}
+{"id": "sci-m-0042", "q": "On the periodic table, niobium is written as which symbol?", "o": ["Nb", "Tb", "La", "Bk"], "a": 0, "e": "The chemical symbol for niobium is Nb.", "t": ["science", "element-symbol"]}
+{"id": "sci-m-0043", "q": "What is the chemical symbol for molybdenum?", "o": ["Tb", "Mo", "Eu", "Mn"], "a": 1, "e": "The chemical symbol for molybdenum is Mo.", "t": ["science", "element-symbol"]}
+{"id": "sci-m-0044", "q": "On the periodic table, palladium is written as which symbol?", "o": ["Nd", "Pd", "Ar", "Sg"], "a": 1, "e": "The chemical symbol for palladium is Pd.", "t": ["science", "element-symbol"]}
+{"id": "sci-m-0045", "q": "What is the chemical symbol for cadmium?", "o": ["Ti", "Bh", "Db", "Cd"], "a": 3, "e": "The chemical symbol for cadmium is Cd.", "t": ["science", "element-symbol"]}
+{"id": "sci-m-0046", "q": "What is the chemical symbol for antimony?", "o": ["Nh", "Yb", "Sb", "Si"], "a": 2, "e": "The chemical symbol for antimony is Sb.", "t": ["science", "element-symbol"]}
+{"id": "sci-m-0047", "q": "What is the chemical symbol for tellurium?", "o": ["Te", "Ga", "Tm", "Gd"], "a": 0, "e": "The chemical symbol for tellurium is Te.", "t": ["science", "element-symbol"]}
+{"id": "sci-m-0048", "q": "On the periodic table, plutonium is written as which symbol?", "o": ["Tl", "Pu", "Eu", "Cd"], "a": 1, "e": "The chemical symbol for plutonium is Pu.", "t": ["science", "element-symbol"]}
+{"id": "sci-m-0049", "q": "On the periodic table, iodine is written as which symbol?", "o": ["K", "I", "P", "Mt"], "a": 1, "e": "The chemical symbol for iodine is I.", "t": ["science", "element-symbol"]}
+{"id": "sci-m-0050", "q": "On the periodic table, xenon is written as which symbol?", "o": ["Ar", "Ds", "Re", "Xe"], "a": 3, "e": "The chemical symbol for xenon is Xe.", "t": ["science", "element-symbol"]}
+{"id": "sci-m-0051", "q": "What is the chemical symbol for caesium?", "o": ["Cs", "Md", "Si", "Mn"], "a": 0, "e": "The chemical symbol for caesium is Cs.", "t": ["science", "element-symbol"]}
+{"id": "sci-m-0052", "q": "On the periodic table, barium is written as which symbol?", "o": ["Ba", "In", "Pu", "Nb"], "a": 0, "e": "The chemical symbol for barium is Ba.", "t": ["science", "element-symbol"]}
+{"id": "sci-m-0053", "q": "What is the chemical symbol for hafnium?", "o": ["Ge", "Hf", "Pa", "Ds"], "a": 1, "e": "The chemical symbol for hafnium is Hf.", "t": ["science", "element-symbol"]}
+{"id": "sci-m-0054", "q": "What is the chemical symbol for tantalum?", "o": ["Ti", "Mt", "Cf", "Ta"], "a": 3, "e": "The chemical symbol for tantalum is Ta.", "t": ["science", "element-symbol"]}
+{"id": "sci-m-0055", "q": "What is the chemical symbol for radium?", "o": ["In", "Be", "Zr", "Ra"], "a": 3, "e": "The chemical symbol for radium is Ra.", "t": ["science", "element-symbol"]}
+{"id": "sci-m-0056", "q": "What is the chemical symbol for radon?", "o": ["Rn", "Eu", "Rg", "Md"], "a": 0, "e": "The chemical symbol for radon is Rn.", "t": ["science", "element-symbol"]}
+{"id": "sci-m-0057", "q": "What is the chemical symbol for boron?", "o": ["B", "W", "Y", "Cf"], "a": 0, "e": "The chemical symbol for boron is B.", "t": ["science", "element-symbol"]}
+{"id": "sci-m-0058", "q": "What is the chemical symbol for francium?", "o": ["Fr", "Lu", "Eu", "Cl"], "a": 0, "e": "The chemical symbol for francium is Fr.", "t": ["science", "element-symbol"]}
+{"id": "sci-m-0059", "q": "What is the chemical symbol for chlorine?", "o": ["In", "Cl", "Fm", "Zr"], "a": 1, "e": "The chemical symbol for chlorine is Cl.", "t": ["science", "element-symbol"]}
+{"id": "sci-m-0060", "q": "On the periodic table, argon is written as which symbol?", "o": ["Bi", "Ar", "Pu", "Pm"], "a": 1, "e": "The chemical symbol for argon is Ar.", "t": ["science", "element-symbol"]}
+{"id": "sci-m-0061", "q": "On the periodic table, scandium is written as which symbol?", "o": ["Sc", "Th", "Zr", "Pa"], "a": 0, "e": "The chemical symbol for scandium is Sc.", "t": ["science", "element-symbol"]}
+{"id": "sci-m-0062", "q": "On the periodic table, titanium is written as which symbol?", "o": ["Eu", "Og", "Ti", "Os"], "a": 2, "e": "The chemical symbol for titanium is Ti.", "t": ["science", "element-symbol"]}
+{"id": "sci-m-0063", "q": "What is the chemical symbol for vanadium?", "o": ["B", "Y", "V", "Th"], "a": 2, "e": "The chemical symbol for vanadium is V.", "t": ["science", "element-symbol"]}
+{"id": "sci-m-0064", "q": "What is the chemical symbol for chromium?", "o": ["Pu", "In", "Cr", "Dy"], "a": 2, "e": "The chemical symbol for chromium is Cr.", "t": ["science", "element-symbol"]}
+{"id": "sci-m-0065", "q": "On the periodic table, manganese is written as which symbol?", "o": ["Ds", "Hf", "Pa", "Mn"], "a": 3, "e": "The chemical symbol for manganese is Mn.", "t": ["science", "element-symbol"]}
+{"id": "sci-m-0066", "q": "On the periodic table, cobalt is written as which symbol?", "o": ["Hs", "Co", "No", "Lu"], "a": 1, "e": "The chemical symbol for cobalt is Co.", "t": ["science", "element-symbol"]}
+{"id": "sci-m-0067", "q": "On the periodic table, tungsten is written as which symbol?", "o": ["V", "P", "B", "W"], "a": 3, "e": "The chemical symbol for tungsten is W.", "t": ["science", "element-symbol"]}
+{"id": "sci-m-0068", "q": "On the periodic table, nickel is written as which symbol?", "o": ["Cl", "Pm", "Hf", "Ni"], "a": 3, "e": "The chemical symbol for nickel is Ni.", "t": ["science", "element-symbol"]}
+{"id": "sci-m-0069", "q": "On the periodic table, osmium is written as which symbol?", "o": ["Rg", "Rb", "Se", "Os"], "a": 3, "e": "The chemical symbol for osmium is Os.", "t": ["science", "element-symbol"]}
+{"id": "sci-m-0070", "q": "What is the chemical symbol for gallium?", "o": ["Tl", "Cm", "Ga", "Es"], "a": 2, "e": "The chemical symbol for gallium is Ga.", "t": ["science", "element-symbol"]}
+{"id": "sci-m-0071", "q": "What is the chemical symbol for germanium?", "o": ["Hf", "Cm", "Ge", "Tb"], "a": 2, "e": "The chemical symbol for germanium is Ge.", "t": ["science", "element-symbol"]}
+{"id": "sci-m-0072", "q": "On the periodic table, selenium is written as which symbol?", "o": ["Fm", "Tl", "Se", "La"], "a": 2, "e": "The chemical symbol for selenium is Se.", "t": ["science", "element-symbol"]}
+{"id": "sci-m-0073", "q": "On the periodic table, iridium is written as which symbol?", "o": ["As", "Ar", "Mc", "Ir"], "a": 3, "e": "The chemical symbol for iridium is Ir.", "t": ["science", "element-symbol"]}
+{"id": "sci-m-0074", "q": "On the periodic table, bromine is written as which symbol?", "o": ["Eu", "Rg", "Br", "Ir"], "a": 2, "e": "The chemical symbol for bromine is Br.", "t": ["science", "element-symbol"]}
+{"id": "sci-m-0075", "q": "On the periodic table, platinum is written as which symbol?", "o": ["Pt", "Th", "Nb", "Ce"], "a": 0, "e": "The chemical symbol for platinum is Pt.", "t": ["science", "element-symbol"]}
+{"id": "sci-m-0076", "q": "On the periodic table, krypton is written as which symbol?", "o": ["Kr", "La", "Si", "Hs"], "a": 0, "e": "The chemical symbol for krypton is Kr.", "t": ["science", "element-symbol"]}
+{"id": "sci-m-0077", "q": "On the periodic table, rubidium is written as which symbol?", "o": ["Bh", "Mc", "Rb", "Pa"], "a": 2, "e": "The chemical symbol for rubidium is Rb.", "t": ["science", "element-symbol"]}
+{"id": "sci-m-0078", "q": "On the periodic table, strontium is written as which symbol?", "o": ["Cf", "Rf", "Gd", "Sr"], "a": 3, "e": "The chemical symbol for strontium is Sr.", "t": ["science", "element-symbol"]}
+{"id": "sci-m-0079", "q": "What is the chemical symbol for yttrium?", "o": ["Y", "V", "B", "Mt"], "a": 0, "e": "The chemical symbol for yttrium is Y.", "t": ["science", "element-symbol"]}
+{"id": "sci-m-0080", "q": "On the periodic table, bismuth is written as which symbol?", "o": ["No", "Cf", "Bi", "Eu"], "a": 2, "e": "The chemical symbol for bismuth is Bi.", "t": ["science", "element-symbol"]}
+{"id": "sci-m-0081", "q": "On the periodic table, polonium is written as which symbol?", "o": ["Po", "Cf", "Sc", "Og"], "a": 0, "e": "The chemical symbol for polonium is Po.", "t": ["science", "element-symbol"]}
+{"id": "sci-m-0082", "q": "On the periodic table, astatine is written as which symbol?", "o": ["Lu", "Cm", "Nd", "At"], "a": 3, "e": "The chemical symbol for astatine is At.", "t": ["science", "element-symbol"]}

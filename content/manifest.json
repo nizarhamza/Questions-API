@@ -1,0 +1,110 @@
+{
+  "generated": "2026-08-31T09:19:51+00:00",
+  "generator": "qbank engine-a",
+  "source": "Wikidata (CC0)",
+  "seed": 1,
+  "difficulty_thresholds": {
+    "easy": 150,
+    "medium": 60,
+    "hard": 25
+  },
+  "total": 6255,
+  "shards": [
+    {
+      "path": "imported/wikidata/film/easy.jsonl",
+      "category": "film",
+      "difficulty": "easy",
+      "count": 80,
+      "bytes": 20204,
+      "sha256": "75a183301e53d275c65ea9cd259b12e3338f3d793f74e192e6e7a5f0246f51d8"
+    },
+    {
+      "path": "imported/wikidata/film/hard.jsonl",
+      "category": "film",
+      "difficulty": "hard",
+      "count": 150,
+      "bytes": 35661,
+      "sha256": "77f3ad81d135331652a270d7aa304708da8a319bb139f292e9a26f27f3a73a99"
+    },
+    {
+      "path": "imported/wikidata/film/medium.jsonl",
+      "category": "film",
+      "difficulty": "medium",
+      "count": 125,
+      "bytes": 30280,
+      "sha256": "e76607cea63be4613f74d3ed06c6abafce9933ec4d91c353556207d2667625a7"
+    },
+    {
+      "path": "imported/wikidata/geography/easy.jsonl",
+      "category": "geography",
+      "difficulty": "easy",
+      "count": 143,
+      "bytes": 30522,
+      "sha256": "f17d2e76911ef9e7e15de116aba7a86416d2b9ce2ce75d79ecd603d2ea3d8b43"
+    },
+    {
+      "path": "imported/wikidata/geography/hard.jsonl",
+      "category": "geography",
+      "difficulty": "hard",
+      "count": 276,
+      "bytes": 61760,
+      "sha256": "c5e5b873ddc03924aeb56d7d677f7d118cfe3d324b7387f0079476252d09108f"
+    },
+    {
+      "path": "imported/wikidata/geography/medium.jsonl",
+      "category": "geography",
+      "difficulty": "medium",
+      "count": 253,
+      "bytes": 53781,
+      "sha256": "a20dc8bbf202a7d8f7d215704b89a57d75384b32141acd697d3a32aabf43e612"
+    },
+    {
+      "path": "imported/wikidata/history/easy.jsonl",
+      "category": "history",
+      "difficulty": "easy",
+      "count": 1026,
+      "bytes": 230396,
+      "sha256": "b873e49e992d3c07a8d18b3aaa067dbe535eca19a6d01d7efb84b4652e6780c6"
+    },
+    {
+      "path": "imported/wikidata/history/hard.jsonl",
+      "category": "history",
+      "difficulty": "hard",
+      "count": 2194,
+      "bytes": 494111,
+      "sha256": "039ee48c6cd122d8c077f549720da39a2a69ca370626966749335e4a7f663093"
+    },
+    {
+      "path": "imported/wikidata/history/medium.jsonl",
+      "category": "history",
+      "difficulty": "medium",
+      "count": 1760,
+      "bytes": 396932,
+      "sha256": "cb8c9971ec19cc425c63e840f99662c53903c0c9818a114fd5780a0054860030"
+    },
+    {
+      "path": "imported/wikidata/science/easy.jsonl",
+      "category": "science",
+      "difficulty": "easy",
+      "count": 52,
+      "bytes": 10181,
+      "sha256": "d9f7b041baf01fcab60effcfe2f7a646981f255ed2bf11ecd2c1dd1e5d6e0736"
+    },
+    {
+      "path": "imported/wikidata/science/hard.jsonl",
+      "category": "science",
+      "difficulty": "hard",
+      "count": 114,
+      "bytes": 22909,
+      "sha256": "3d0fba0fb213212a30e1a1e918ec75cd12d003a3aa57e99df8bf79fed181b8a2"
+    },
+    {
+      "path": "imported/wikidata/science/medium.jsonl",
+      "category": "science",
+      "difficulty": "medium",
+      "count": 82,
+      "bytes": 16188,
+      "sha256": "8992bb513ba57d2cb2847175059006f4327f9a94ef1e121e35ff8491dc8c3433"
+    }
+  ]
+}

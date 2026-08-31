@@ -1,0 +1,346 @@
+{
+  "patterns": [
+    {
+      "pattern": "capital-of",
+      "rows": 204,
+      "dropped_multivalue": 13,
+      "dropped_obscure": 0,
+      "dropped_leak": 14,
+      "dropped_no_distractors": 0,
+      "produced": 177,
+      "cutoffs": [
+        360,
+        314
+      ],
+      "failed_shards": [],
+      "by_difficulty": {
+        "medium": 63,
+        "easy": 37,
+        "hard": 77
+      }
+    },
+    {
+      "pattern": "currency-of",
+      "rows": 220,
+      "dropped_multivalue": 36,
+      "dropped_obscure": 0,
+      "dropped_leak": 23,
+      "dropped_no_distractors": 0,
+      "produced": 161,
+      "cutoffs": [
+        362,
+        314
+      ],
+      "failed_shards": [],
+      "by_difficulty": {
+        "medium": 62,
+        "easy": 35,
+        "hard": 64
+      }
+    },
+    {
+      "pattern": "language-of",
+      "rows": 377,
+      "dropped_multivalue": 264,
+      "dropped_obscure": 0,
+      "dropped_leak": 1,
+      "dropped_no_distractors": 0,
+      "produced": 112,
+      "cutoffs": [
+        370,
+        317
+      ],
+      "failed_shards": [],
+      "by_difficulty": {
+        "medium": 39,
+        "easy": 22,
+        "hard": 51
+      }
+    },
+    {
+      "pattern": "continent-of",
+      "rows": 205,
+      "dropped_multivalue": 15,
+      "dropped_obscure": 0,
+      "dropped_leak": 1,
+      "dropped_no_distractors": 0,
+      "produced": 189,
+      "cutoffs": [
+        359,
+        314
+      ],
+      "failed_shards": [],
+      "by_difficulty": {
+        "medium": 68,
+        "easy": 37,
+        "hard": 84
+      }
+    },
+    {
+      "pattern": "city-country",
+      "rows": 2274,
+      "dropped_multivalue": 143,
+      "dropped_obscure": 0,
+      "dropped_leak": 18,
+      "dropped_no_distractors": 0,
+      "produced": 2113,
+      "cutoffs": [
+        96,
+        59
+      ],
+      "failed_shards": [],
+      "by_difficulty": {
+        "easy": 419,
+        "medium": 747,
+        "hard": 947
+      }
+    },
+    {
+      "pattern": "element-symbol",
+      "rows": 174,
+      "dropped_multivalue": 0,
+      "dropped_obscure": 49,
+      "dropped_leak": 1,
+      "dropped_no_distractors": 0,
+      "produced": 124,
+      "cutoffs": [
+        175,
+        146
+      ],
+      "failed_shards": [],
+      "by_difficulty": {
+        "hard": 57,
+        "medium": 41,
+        "easy": 26
+      }
+    },
+    {
+      "pattern": "element-atomic-number",
+      "rows": 174,
+      "dropped_multivalue": 0,
+      "dropped_obscure": 49,
+      "dropped_leak": 0,
+      "dropped_no_distractors": 0,
+      "produced": 125,
+      "cutoffs": [
+        175,
+        146
+      ],
+      "failed_shards": [],
+      "by_difficulty": {
+        "hard": 57,
+        "medium": 42,
+        "easy": 26
+      }
+    },
+    {
+      "pattern": "film-director",
+      "rows": 425,
+      "dropped_multivalue": 69,
+      "dropped_obscure": 0,
+      "dropped_leak": 0,
+      "dropped_no_distractors": 0,
+      "produced": 356,
+      "cutoffs": [
+        78,
+        66
+      ],
+      "failed_shards": [],
+      "by_difficulty": {
+        "easy": 80,
+        "medium": 125,
+        "hard": 151
+      }
+    },
+    {
+      "pattern": "person-birth-year",
+      "rows": 3395,
+      "dropped_multivalue": 61,
+      "dropped_obscure": 0,
+      "dropped_leak": 0,
+      "dropped_no_distractors": 0,
+      "produced": 3334,
+      "cutoffs": [
+        109,
+        76
+      ],
+      "failed_shards": [],
+      "by_difficulty": {
+        "easy": 683,
+        "medium": 1203,
+        "hard": 1448
+      }
+    },
+    {
+      "pattern": "person-nationality",
+      "rows": 4829,
+      "dropped_multivalue": 2245,
+      "dropped_obscure": 0,
+      "dropped_leak": 94,
+      "dropped_no_distractors": 0,
+      "produced": 2490,
+      "cutoffs": [
+        109,
+        76
+      ],
+      "failed_shards": [],
+      "by_difficulty": {
+        "medium": 880,
+        "hard": 1097,
+        "easy": 513
+      }
+    }
+  ],
+  "assembly": {
+    "deduped": {
+      "entity-overused": 84,
+      "duplicate-text": 11
+    },
+    "buckets": {
+      "film/easy": {
+        "available": 80,
+        "written": 80,
+        "cap_share": 1.0,
+        "per_pattern": 80,
+        "patterns": {
+          "film-director": 80
+        },
+        "uncapped_small_patterns": []
+      },
+      "film/hard": {
+        "available": 150,
+        "written": 150,
+        "cap_share": 1.0,
+        "per_pattern": 150,
+        "patterns": {
+          "film-director": 150
+        },
+        "uncapped_small_patterns": []
+      },
+      "film/medium": {
+        "available": 125,
+        "written": 125,
+        "cap_share": 1.0,
+        "per_pattern": 125,
+        "patterns": {
+          "film-director": 125
+        },
+        "uncapped_small_patterns": []
+      },
+      "geography/easy": {
+        "available": 531,
+        "written": 143,
+        "cap_share": 0.25,
+        "per_pattern": 35,
+        "patterns": {
+          "capital-of": 35,
+          "city-country": 35,
+          "continent-of": 35,
+          "currency-of": 35,
+          "language-of": 3
+        },
+        "uncapped_small_patterns": [
+          "language-of"
+        ]
+      },
+      "geography/hard": {
+        "available": 1188,
+        "written": 276,
+        "cap_share": 0.25,
+        "per_pattern": 64,
+        "patterns": {
+          "capital-of": 64,
+          "city-country": 64,
+          "continent-of": 64,
+          "currency-of": 64,
+          "language-of": 20
+        },
+        "uncapped_small_patterns": [
+          "language-of"
+        ]
+      },
+      "geography/medium": {
+        "available": 939,
+        "written": 253,
+        "cap_share": 0.25,
+        "per_pattern": 62,
+        "patterns": {
+          "capital-of": 62,
+          "city-country": 62,
+          "continent-of": 62,
+          "currency-of": 62,
+          "language-of": 5
+        },
+        "uncapped_small_patterns": [
+          "language-of"
+        ]
+      },
+      "history/easy": {
+        "available": 1196,
+        "written": 1026,
+        "cap_share": 0.5,
+        "per_pattern": 513,
+        "patterns": {
+          "person-birth-year": 513,
+          "person-nationality": 513
+        },
+        "uncapped_small_patterns": []
+      },
+      "history/hard": {
+        "available": 2545,
+        "written": 2194,
+        "cap_share": 0.5,
+        "per_pattern": 1097,
+        "patterns": {
+          "person-birth-year": 1097,
+          "person-nationality": 1097
+        },
+        "uncapped_small_patterns": []
+      },
+      "history/medium": {
+        "available": 2083,
+        "written": 1760,
+        "cap_share": 0.5,
+        "per_pattern": 880,
+        "patterns": {
+          "person-birth-year": 880,
+          "person-nationality": 880
+        },
+        "uncapped_small_patterns": []
+      },
+      "science/easy": {
+        "available": 52,
+        "written": 52,
+        "cap_share": 0.5,
+        "per_pattern": 26,
+        "patterns": {
+          "element-atomic-number": 26,
+          "element-symbol": 26
+        },
+        "uncapped_small_patterns": []
+      },
+      "science/hard": {
+        "available": 114,
+        "written": 114,
+        "cap_share": 0.5,
+        "per_pattern": 57,
+        "patterns": {
+          "element-atomic-number": 57,
+          "element-symbol": 57
+        },
+        "uncapped_small_patterns": []
+      },
+      "science/medium": {
+        "available": 83,
+        "written": 82,
+        "cap_share": 0.5,
+        "per_pattern": 41,
+        "patterns": {
+          "element-atomic-number": 41,
+          "element-symbol": 41
+        },
+        "uncapped_small_patterns": []
+      }
+    }
+  }
+}
