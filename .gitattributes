@@ -1,0 +1,18 @@
+# Normalize line endings on commit; check out LF on every platform. The bank
+# under content/ is a committed artifact whose per-shard sha256 lives in
+# content/manifest.json and is re-verified on Linux CI, so CRLF in a Windows
+# working tree must never reach the index.
+* text=auto eol=lf
+
+*.jsonl   text eol=lf
+*.json    text eol=lf
+*.py      text eol=lf
+*.ts      text eol=lf
+*.mjs     text eol=lf
+*.md      text eol=lf
+*.yml     text eol=lf
+*.yaml    text eol=lf
+*.jsonc   text eol=lf
+
+*.png binary
+*.gz  binary

@@ -83,7 +83,10 @@ def make_id(category: str, difficulty: str, index: int) -> str:
 
 def write_jsonl(path: Path, questions: list[Question]) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
-    with path.open("w", encoding="utf-8") as handle:
+    # newline="\n": the shards are a committed artifact whose sha256 is recorded
+    # in manifest.json and re-verified on Linux CI. Text mode on Windows would
+    # write CRLF, so the manifest hashes would only match a Windows checkout.
+    with path.open("w", encoding="utf-8", newline="\n") as handle:
         for question in questions:
             handle.write(json.dumps(question.record(), ensure_ascii=False) + "\n")
 

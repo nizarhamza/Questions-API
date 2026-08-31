@@ -402,5 +402,6 @@ when a single question is served in isolation.
 def write_notice(out_root: Path | str) -> Path:
     path = Path(out_root) / "imported" / "opentdb" / "NOTICE.md"
     path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(NOTICE, encoding="utf-8")
+    with path.open("w", encoding="utf-8", newline="\n") as handle:
+        handle.write(NOTICE)
     return path

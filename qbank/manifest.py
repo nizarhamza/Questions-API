@@ -130,5 +130,8 @@ def write_merged(
     manifest["total"] = sum(s["count"] for s in merged)
     manifest["shards"] = merged
 
-    manifest_path.write_text(json.dumps(manifest, indent=2) + "\n", encoding="utf-8")
+    # newline="\n" so the manifest is byte-identical whatever the host OS; the
+    # shard hashes it carries are verified against LF files on Linux CI.
+    with manifest_path.open("w", encoding="utf-8", newline="\n") as handle:
+        handle.write(json.dumps(manifest, indent=2) + "\n")
     return manifest
