@@ -211,6 +211,25 @@ should be near zero by construction — the check is there to catch regressions.
 filter removed, then what survived. When a pattern's yield looks wrong, that file
 says which filter ate it.
 
+## Serving it
+
+`api/` is a Cloudflare Worker that puts the generated bank behind an HTTP API, with
+two surfaces on one deployment: a native `/v1/*` API that speaks this bank's own
+vocabulary (pattern tags, provenance, sealed questions, batch scoring), and an
+`/api.php` surface that is bit-compatible with Open Trivia DB, so an existing OpenTDB
+client can be repointed at it by changing a base URL and nothing else.
+
+```bash
+cd api
+npm install
+npm run build:data    # content/ -> a verified, bundled JSON module
+npm run dev
+```
+
+The bank ships inside the Worker bundle rather than a database — 0.95 MB of JSON,
+re-verified against `manifest.json` at build time, so a deployed Worker either has
+the whole bank or fails to deploy. See `api/README.md`.
+
 ## Licence
 
 The generator code is MIT (see `LICENSE`). The generated bank under `content/`

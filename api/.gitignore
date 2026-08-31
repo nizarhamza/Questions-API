@@ -1,0 +1,13 @@
+node_modules/
+.wrangler/
+dist/
+_to_delete/
+
+# Generated: `npm run build:data` rebuilds it from ../content
+src/data/bank.json
+
+# Generated: `wrangler types`
+worker-configuration.d.ts
+
+.dev.vars
+.env

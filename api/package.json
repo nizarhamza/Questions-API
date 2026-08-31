@@ -1,0 +1,28 @@
+{
+  "name": "questions-api",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Trivia API over the Questions-API Wikidata question bank, on Cloudflare Workers",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "build:data": "node scripts/build-data.mjs",
+    "dev": "wrangler dev",
+    "deploy": "npm run build:data && wrangler deploy",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "smoke": "node scripts/smoke.mjs",
+    "types": "wrangler types",
+    "pretypecheck": "npm run build:data && wrangler types",
+    "pretest": "npm run build:data && wrangler types",
+    "presmoke": "npm run build:data",
+    "predev": "npm run build:data"
+  },
+  "devDependencies": {
+    "@cloudflare/vitest-pool-workers": "^0.22.0",
+    "typescript": "^5.6.0",
+    "vitest": "^4.1.0",
+    "wrangler": "^4.127.1"
+  }
+}

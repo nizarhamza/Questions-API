@@ -1,0 +1,26 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "questions-api",
+  "main": "src/index.ts",
+  "compatibility_date": "2025-08-01",
+  "observability": { "enabled": true },
+
+  // Session tokens live in a SQLite-backed Durable Object: strongly consistent,
+  // and free of the 1-write-per-second-per-key ceiling that rules KV out here.
+  "durable_objects": {
+    "bindings": [{ "name": "SESSIONS", "class_name": "SessionToken" }]
+  },
+  "migrations": [{ "tag": "v1", "new_sqlite_classes": ["SessionToken"] }],
+
+  // Native rate limiting. namespace_id is account-scoped and arbitrary; change it
+  // only if another Worker on the account already claims the same number.
+  "ratelimits": [
+    { "name": "RL_GENERAL", "namespace_id": "1101", "simple": { "limit": 120, "period": 60 } },
+    { "name": "RL_TOKENS", "namespace_id": "1102", "simple": { "limit": 12, "period": 60 } }
+  ],
+
+  "vars": {
+    "PUBLIC_BASE_URL": "",
+    "TOKEN_TTL_SECONDS": "21600"
+  }
+}

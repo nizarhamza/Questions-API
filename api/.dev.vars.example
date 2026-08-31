@@ -1,0 +1,6 @@
+# Copy to .dev.vars for local development. In production use:
+#   wrangler secret put SIGNING_SECRET
+#
+# Signs the sealed-question "deals" that /v1/check verifies. Any long random
+# string; rotating it invalidates outstanding deals, nothing else.
+SIGNING_SECRET="change-me-openssl-rand-hex-32"
