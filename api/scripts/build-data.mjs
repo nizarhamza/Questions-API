@@ -132,6 +132,7 @@ const bank = {
   version: 1,
   generated: manifest.generated,
   source: manifest.source,
+  sources: manifest.sources ?? (manifest.source ? [manifest.source] : []),
   seed: manifest.seed,
   difficulties: DIFFICULTY_ORDER,
   categories,

@@ -32,6 +32,7 @@ const data = raw as unknown as {
   version: number;
   generated: string;
   source: string;
+  sources?: string[];
   seed: number;
   difficulties: Difficulty[];
   categories: Category[];
@@ -44,6 +45,7 @@ export const CATEGORIES = data.categories;
 export const PATTERNS = data.patterns;
 export const GENERATED = data.generated;
 export const SOURCE = data.source;
+export const SOURCES = data.sources ?? (data.source ? [data.source] : []);
 export const BANK_VERSION = data.version;
 
 export const QUESTIONS: Question[] = data.questions.map((t, i) => {

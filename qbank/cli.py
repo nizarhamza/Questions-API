@@ -141,13 +141,18 @@ def cmd_generate(args) -> int:
 
 # -------------------------------------------------------------------- import (C)
 
-def _existing_question_texts(out_root: Path, exclude_engine: str) -> set[str]:
-    """Normalised question text of every shard not owned by `exclude_engine`.
+def _scan_other_engines(out_root: Path, exclude_engine: str) -> tuple[set[str], dict[tuple[str, str], int]]:
+    """One pass over every shard not owned by `exclude_engine`.
 
-    Lets an import drop rows that Engine A (or an earlier import) already covers,
-    so the same fact is not asked twice across engines.
+    Returns the normalised question text of those rows (so an import can drop a
+    fact another engine already covers) and a per-(category, difficulty) record
+    count (so imported ids continue after Engine A's within a shared cell rather
+    than colliding: both engines number the `science` category from 1).
     """
+    from .schema import DIFFICULTIES
+
     texts: set[str] = set()
+    counts: Counter = Counter()
     skip = out_root / "imported" / exclude_engine
     for path in out_root.rglob("*.jsonl"):
         try:
@@ -155,9 +160,13 @@ def _existing_question_texts(out_root: Path, exclude_engine: str) -> set[str]:
             continue
         except ValueError:
             pass
-        for record in read_jsonl(path):
+        records = read_jsonl(path)
+        for record in records:
             texts.add(normalize(record.get("q", "")))
-    return texts
+        category, difficulty = path.parent.name, path.stem
+        if difficulty in DIFFICULTIES:
+            counts[(category, difficulty)] += len(records)
+    return texts, dict(counts)
 
 
 def cmd_import(args) -> int:
@@ -174,14 +183,14 @@ def cmd_import(args) -> int:
     )
     print(f"opentdb: {len(raw)} raw results", file=sys.stderr)
 
-    existing = _existing_question_texts(out_root, exclude_engine="opentdb")
-    produced, stats = opentdb.to_questions(raw, seed=args.seed, existing_texts=existing)
+    existing_texts, cell_counts = _scan_other_engines(out_root, exclude_engine="opentdb")
+    produced, stats = opentdb.to_questions(raw, seed=args.seed, existing_texts=existing_texts)
     print(stats.line(), file=sys.stderr)
     if not produced:
         print("no questions produced", file=sys.stderr)
         return 1
 
-    buckets = opentdb.assemble(produced, seed=args.seed)
+    buckets = opentdb.assemble(produced, seed=args.seed, id_offsets=cell_counts)
 
     shards = []
     for (category, difficulty), questions in sorted(buckets.items()):

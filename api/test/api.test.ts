@@ -1,7 +1,23 @@
 import { SELF } from "cloudflare:test";
-import { describe, expect, it } from "vitest";
+import { beforeAll, describe, expect, it } from "vitest";
 
 const BASE = "https://questions.test";
+
+// Derived from the running bundle rather than hardcoded: the bank grows when
+// Engine C imports a source, and the suite should track it, not pin it.
+let BANK_TOTAL = 0;
+let CATEGORY_COUNT = 0;
+let PATTERN_COUNT = 0;
+const CATEGORY_TOTAL: Record<string, number> = {};
+
+beforeAll(async () => {
+  const cats = await (await SELF.fetch(BASE + "/v1/categories")).json() as any;
+  CATEGORY_COUNT = cats.count;
+  for (const c of cats.categories) CATEGORY_TOTAL[c.slug] = c.counts.total;
+  BANK_TOTAL = cats.categories.reduce((s: number, c: any) => s + c.counts.total, 0);
+  const pats = await (await SELF.fetch(BASE + "/v1/patterns")).json() as any;
+  PATTERN_COUNT = pats.count;
+});
 
 async function get(path: string) {
   const response = await SELF.fetch(BASE + path);
@@ -22,7 +38,7 @@ describe("service basics", () => {
     const { response, body } = await get("/health");
     expect(response.status).toBe(200);
     expect(body.status).toBe("ok");
-    expect(body.questions).toBe(6255);
+    expect(body.questions).toBe(BANK_TOTAL);
   });
 
   it("serves the docs page at the root", async () => {
@@ -56,10 +72,11 @@ describe("service basics", () => {
 describe("native: metadata", () => {
   it("lists categories whose counts sum to the bank total", async () => {
     const { body } = await get("/v1/categories");
-    expect(body.count).toBe(4);
+    expect(body.count).toBe(CATEGORY_COUNT);
+    expect(body.count).toBeGreaterThanOrEqual(4);
 
     const total = body.categories.reduce((sum: number, c: any) => sum + c.counts.total, 0);
-    expect(total).toBe(6255);
+    expect(total).toBe(BANK_TOTAL);
 
     for (const c of body.categories) {
       expect(c.counts.easy + c.counts.medium + c.counts.hard).toBe(c.counts.total);
@@ -74,9 +91,10 @@ describe("native: metadata", () => {
 
   it("reports patterns that sum to the bank total", async () => {
     const { body } = await get("/v1/patterns");
-    expect(body.count).toBe(10);
+    expect(body.count).toBe(PATTERN_COUNT);
+    expect(body.count).toBeGreaterThanOrEqual(10);
     const total = body.patterns.reduce((sum: number, p: any) => sum + p.count, 0);
-    expect(total).toBe(6255);
+    expect(total).toBe(BANK_TOTAL);
   });
 
   it("caches static metadata at the edge but never a draw", async () => {
@@ -337,10 +355,10 @@ describe("opentdb compatibility", () => {
 
     const count = await get("/api_count.php?category=22");
     expect(count.body.category_id).toBe(22);
-    expect(count.body.category_question_count.total_question_count).toBe(672);
+    expect(count.body.category_question_count.total_question_count).toBe(CATEGORY_TOTAL.geography);
 
     const global = await get("/api_count_global.php");
-    expect(global.body.overall.total_num_of_questions).toBe(6255);
-    expect(global.body.categories["23"].total_num_of_questions).toBe(4980);
+    expect(global.body.overall.total_num_of_questions).toBe(BANK_TOTAL);
+    expect(global.body.categories["23"].total_num_of_questions).toBe(CATEGORY_TOTAL.history);
   });
 });
