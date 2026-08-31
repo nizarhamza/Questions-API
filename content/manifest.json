@@ -1,22 +1,331 @@
 {
-  "generated": "2026-08-31T09:19:51+00:00",
-  "generator": "qbank engine-a",
-  "source": "Wikidata (CC0)",
+  "generated": "2026-08-31T12:02:01+00:00",
+  "generators": {
+    "wikidata": {
+      "engine": "qbank engine-a",
+      "source": "Wikidata",
+      "license": "CC0",
+      "generated": "2026-08-31T09:19:51+00:00",
+      "seed": 1
+    },
+    "opentdb": {
+      "engine": "qbank engine-c",
+      "source": "Open Trivia Database (https://opentdb.com)",
+      "license": "CC BY-SA 4.0",
+      "generated": "2026-08-31T12:02:01+00:00",
+      "seed": 1,
+      "note": "OpenTDB session token drained to response_code 4."
+    }
+  },
+  "source": "Wikidata (CC0); Open Trivia Database (https://opentdb.com) (CC BY-SA 4.0)",
+  "sources": [
+    "Wikidata (CC0)",
+    "Open Trivia Database (https://opentdb.com) (CC BY-SA 4.0)"
+  ],
   "seed": 1,
   "difficulty_thresholds": {
     "easy": 150,
     "medium": 60,
     "hard": 25
   },
-  "total": 6255,
+  "total": 10705,
   "shards": [
+    {
+      "path": "imported/opentdb/animals/easy.jsonl",
+      "category": "animals",
+      "difficulty": "easy",
+      "count": 18,
+      "bytes": 4710,
+      "sha256": "3d11f76b80743c4743b8154b4300486fedc8600a8fb50416c6298eba3c920f4d",
+      "engine": "opentdb",
+      "source": "Open Trivia Database (https://opentdb.com)",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "path": "imported/opentdb/animals/hard.jsonl",
+      "category": "animals",
+      "difficulty": "hard",
+      "count": 21,
+      "bytes": 5765,
+      "sha256": "25a8bd4fd0d77238737c09ec03f1ee4a9966bc246c454411cf219894ba98bc18",
+      "engine": "opentdb",
+      "source": "Open Trivia Database (https://opentdb.com)",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "path": "imported/opentdb/animals/medium.jsonl",
+      "category": "animals",
+      "difficulty": "medium",
+      "count": 29,
+      "bytes": 7955,
+      "sha256": "67b5ee54ab546dde9eadd3bb1ac007aa037fda76be40e2b91b54b76ab21da133",
+      "engine": "opentdb",
+      "source": "Open Trivia Database (https://opentdb.com)",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "path": "imported/opentdb/anime/easy.jsonl",
+      "category": "anime",
+      "difficulty": "easy",
+      "count": 49,
+      "bytes": 14008,
+      "sha256": "9dc57855371b24636c438eaf43a327b2ac69dab95c29730b55e95d326ac4a0f6",
+      "engine": "opentdb",
+      "source": "Open Trivia Database (https://opentdb.com)",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "path": "imported/opentdb/anime/hard.jsonl",
+      "category": "anime",
+      "difficulty": "hard",
+      "count": 42,
+      "bytes": 12489,
+      "sha256": "2bca5f13ae1d4c829f9d33ee9e77e12a4345215a34e79e195709553b7a91e8d2",
+      "engine": "opentdb",
+      "source": "Open Trivia Database (https://opentdb.com)",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "path": "imported/opentdb/anime/medium.jsonl",
+      "category": "anime",
+      "difficulty": "medium",
+      "count": 84,
+      "bytes": 24819,
+      "sha256": "c9ebcad0ec250815867bd15b92032c841ce02283d1d18976c46c00eae4510338",
+      "engine": "opentdb",
+      "source": "Open Trivia Database (https://opentdb.com)",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "path": "imported/opentdb/art/easy.jsonl",
+      "category": "art",
+      "difficulty": "easy",
+      "count": 15,
+      "bytes": 4305,
+      "sha256": "fb90513e4131c57a0d55d1102ba32646827999921ee35b4d95de99bb27542b03",
+      "engine": "opentdb",
+      "source": "Open Trivia Database (https://opentdb.com)",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "path": "imported/opentdb/art/hard.jsonl",
+      "category": "art",
+      "difficulty": "hard",
+      "count": 17,
+      "bytes": 4749,
+      "sha256": "e8a2271a241e5d3e6cff6117ea0f8147f9b35393152f3252e705fbb1a4387fd0",
+      "engine": "opentdb",
+      "source": "Open Trivia Database (https://opentdb.com)",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "path": "imported/opentdb/art/medium.jsonl",
+      "category": "art",
+      "difficulty": "medium",
+      "count": 16,
+      "bytes": 4631,
+      "sha256": "e1c2a869b4ffad87a096b495a9d5617011894ae9cc93ad02bf5d7351b676f7a9",
+      "engine": "opentdb",
+      "source": "Open Trivia Database (https://opentdb.com)",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "path": "imported/opentdb/boardgames/easy.jsonl",
+      "category": "boardgames",
+      "difficulty": "easy",
+      "count": 17,
+      "bytes": 4945,
+      "sha256": "d16aa5f6141697383190758c943ccf5d351ff89e81337fdf772b458bef10d8cb",
+      "engine": "opentdb",
+      "source": "Open Trivia Database (https://opentdb.com)",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "path": "imported/opentdb/boardgames/hard.jsonl",
+      "category": "boardgames",
+      "difficulty": "hard",
+      "count": 25,
+      "bytes": 7513,
+      "sha256": "e83cbc5673bf0ad7517568f128e53a0f54b22d34ecf301b53b87ce27eb58d2d1",
+      "engine": "opentdb",
+      "source": "Open Trivia Database (https://opentdb.com)",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "path": "imported/opentdb/boardgames/medium.jsonl",
+      "category": "boardgames",
+      "difficulty": "medium",
+      "count": 21,
+      "bytes": 6279,
+      "sha256": "1b5a2df1a940d3c9009c721018091b6079ae765451b1c7d014e13e5e4c44d6ac",
+      "engine": "opentdb",
+      "source": "Open Trivia Database (https://opentdb.com)",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "path": "imported/opentdb/cartoons/easy.jsonl",
+      "category": "cartoons",
+      "difficulty": "easy",
+      "count": 36,
+      "bytes": 10596,
+      "sha256": "c50552d07ec89e34ab26b098ef57791cbe00d97ca237228235175ec4d4e6cfeb",
+      "engine": "opentdb",
+      "source": "Open Trivia Database (https://opentdb.com)",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "path": "imported/opentdb/cartoons/hard.jsonl",
+      "category": "cartoons",
+      "difficulty": "hard",
+      "count": 21,
+      "bytes": 6693,
+      "sha256": "88b909156d75533061ebdac7116bd9a5813b1d6798c24b6613a8a175032cdb5b",
+      "engine": "opentdb",
+      "source": "Open Trivia Database (https://opentdb.com)",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "path": "imported/opentdb/cartoons/medium.jsonl",
+      "category": "cartoons",
+      "difficulty": "medium",
+      "count": 39,
+      "bytes": 11499,
+      "sha256": "f4898303a286b7aa8e054aea46ff8b6c948582782f5de11001e72a97b0a9248f",
+      "engine": "opentdb",
+      "source": "Open Trivia Database (https://opentdb.com)",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "path": "imported/opentdb/celebrities/easy.jsonl",
+      "category": "celebrities",
+      "difficulty": "easy",
+      "count": 11,
+      "bytes": 3118,
+      "sha256": "149f1beabcad1beca0af30c062c075dcdedc7ddec392b6bc65b79fc69f761ce4",
+      "engine": "opentdb",
+      "source": "Open Trivia Database (https://opentdb.com)",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "path": "imported/opentdb/celebrities/hard.jsonl",
+      "category": "celebrities",
+      "difficulty": "hard",
+      "count": 7,
+      "bytes": 1876,
+      "sha256": "9090884d53a4220378b87b5f7e551ef119388da4b7446f9780b3291dfb33994a",
+      "engine": "opentdb",
+      "source": "Open Trivia Database (https://opentdb.com)",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "path": "imported/opentdb/celebrities/medium.jsonl",
+      "category": "celebrities",
+      "difficulty": "medium",
+      "count": 30,
+      "bytes": 8855,
+      "sha256": "1395cf0b757cb01b311848f2aeedc45b5e68e643ff08ed792e943b9c7cfa6e41",
+      "engine": "opentdb",
+      "source": "Open Trivia Database (https://opentdb.com)",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "path": "imported/opentdb/comics/easy.jsonl",
+      "category": "comics",
+      "difficulty": "easy",
+      "count": 18,
+      "bytes": 4981,
+      "sha256": "c1c97b110a9dc4dbc6816dd7be43b460c6e6295266f42dbd3252cc5b6b423646",
+      "engine": "opentdb",
+      "source": "Open Trivia Database (https://opentdb.com)",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "path": "imported/opentdb/comics/hard.jsonl",
+      "category": "comics",
+      "difficulty": "hard",
+      "count": 18,
+      "bytes": 5237,
+      "sha256": "949ac60afebb3e8404eaa52fad54b62c2d76c531add129d82fcaf9f7a66b4cdf",
+      "engine": "opentdb",
+      "source": "Open Trivia Database (https://opentdb.com)",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "path": "imported/opentdb/comics/medium.jsonl",
+      "category": "comics",
+      "difficulty": "medium",
+      "count": 38,
+      "bytes": 11188,
+      "sha256": "24048e5047b292317e45126659d1b2d10b7003ea5050445f1b1781b24e3fec79",
+      "engine": "opentdb",
+      "source": "Open Trivia Database (https://opentdb.com)",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "path": "imported/opentdb/computers/easy.jsonl",
+      "category": "computers",
+      "difficulty": "easy",
+      "count": 46,
+      "bytes": 13235,
+      "sha256": "878f9a9e9d5e21a93b00f1e093530501a507f9d833c51a92ed8a9953a19cfb8b",
+      "engine": "opentdb",
+      "source": "Open Trivia Database (https://opentdb.com)",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "path": "imported/opentdb/computers/hard.jsonl",
+      "category": "computers",
+      "difficulty": "hard",
+      "count": 37,
+      "bytes": 10962,
+      "sha256": "332067373bdd655c8ca9c32e61a68e00c3a45104ade54947faa6ab9b2ade2257",
+      "engine": "opentdb",
+      "source": "Open Trivia Database (https://opentdb.com)",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "path": "imported/opentdb/computers/medium.jsonl",
+      "category": "computers",
+      "difficulty": "medium",
+      "count": 60,
+      "bytes": 17686,
+      "sha256": "739cc181ffadeae4082a5aeafa05911317c66ee0eecf0b7e08b6f8e972764cea",
+      "engine": "opentdb",
+      "source": "Open Trivia Database (https://opentdb.com)",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "path": "imported/opentdb/film/easy.jsonl",
+      "category": "film",
+      "difficulty": "easy",
+      "count": 92,
+      "bytes": 27065,
+      "sha256": "cf137a0469682c9b79b4fb6dc1faf51c66b507a36726ffb1776312ab25718515",
+      "engine": "opentdb",
+      "source": "Open Trivia Database (https://opentdb.com)",
+      "license": "CC BY-SA 4.0"
+    },
     {
       "path": "imported/wikidata/film/easy.jsonl",
       "category": "film",
       "difficulty": "easy",
       "count": 80,
       "bytes": 20204,
-      "sha256": "75a183301e53d275c65ea9cd259b12e3338f3d793f74e192e6e7a5f0246f51d8"
+      "sha256": "75a183301e53d275c65ea9cd259b12e3338f3d793f74e192e6e7a5f0246f51d8",
+      "engine": "wikidata",
+      "source": "Wikidata",
+      "license": "CC0"
+    },
+    {
+      "path": "imported/opentdb/film/hard.jsonl",
+      "category": "film",
+      "difficulty": "hard",
+      "count": 46,
+      "bytes": 14512,
+      "sha256": "5e18b83459419169aa9f31be9b69e57562f831a15bd334c7ae01eb4433a21779",
+      "engine": "opentdb",
+      "source": "Open Trivia Database (https://opentdb.com)",
+      "license": "CC BY-SA 4.0"
     },
     {
       "path": "imported/wikidata/film/hard.jsonl",
@@ -24,7 +333,21 @@
       "difficulty": "hard",
       "count": 150,
       "bytes": 35661,
-      "sha256": "77f3ad81d135331652a270d7aa304708da8a319bb139f292e9a26f27f3a73a99"
+      "sha256": "77f3ad81d135331652a270d7aa304708da8a319bb139f292e9a26f27f3a73a99",
+      "engine": "wikidata",
+      "source": "Wikidata",
+      "license": "CC0"
+    },
+    {
+      "path": "imported/opentdb/film/medium.jsonl",
+      "category": "film",
+      "difficulty": "medium",
+      "count": 130,
+      "bytes": 39988,
+      "sha256": "320e17271c64736ec173eb43de68b8ac8669220a1dd98d3fd2dcc3613ea92e67",
+      "engine": "opentdb",
+      "source": "Open Trivia Database (https://opentdb.com)",
+      "license": "CC BY-SA 4.0"
     },
     {
       "path": "imported/wikidata/film/medium.jsonl",
@@ -32,7 +355,87 @@
       "difficulty": "medium",
       "count": 125,
       "bytes": 30280,
-      "sha256": "e76607cea63be4613f74d3ed06c6abafce9933ec4d91c353556207d2667625a7"
+      "sha256": "e76607cea63be4613f74d3ed06c6abafce9933ec4d91c353556207d2667625a7",
+      "engine": "wikidata",
+      "source": "Wikidata",
+      "license": "CC0"
+    },
+    {
+      "path": "imported/opentdb/gadgets/easy.jsonl",
+      "category": "gadgets",
+      "difficulty": "easy",
+      "count": 14,
+      "bytes": 3777,
+      "sha256": "9f40533c3e5691e9cb8f85111799916650668f453f63ba05893359861f550305",
+      "engine": "opentdb",
+      "source": "Open Trivia Database (https://opentdb.com)",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "path": "imported/opentdb/gadgets/hard.jsonl",
+      "category": "gadgets",
+      "difficulty": "hard",
+      "count": 5,
+      "bytes": 1348,
+      "sha256": "f9e9a65a0e13cd4237c87b40b3a9e03e79295bb462c9dc4208c5739a9d595df7",
+      "engine": "opentdb",
+      "source": "Open Trivia Database (https://opentdb.com)",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "path": "imported/opentdb/gadgets/medium.jsonl",
+      "category": "gadgets",
+      "difficulty": "medium",
+      "count": 15,
+      "bytes": 4383,
+      "sha256": "15b2c5fb664411f5b227548037409996abc9a5674b2ca28fadac665fd3a862db",
+      "engine": "opentdb",
+      "source": "Open Trivia Database (https://opentdb.com)",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "path": "imported/opentdb/general/easy.jsonl",
+      "category": "general",
+      "difficulty": "easy",
+      "count": 173,
+      "bytes": 47474,
+      "sha256": "36c84bff6362ea7a4f490dd4c203e38167cec41569ef7a498b123dbb0304f611",
+      "engine": "opentdb",
+      "source": "Open Trivia Database (https://opentdb.com)",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "path": "imported/opentdb/general/hard.jsonl",
+      "category": "general",
+      "difficulty": "hard",
+      "count": 67,
+      "bytes": 19705,
+      "sha256": "4f3a7ffab2a020f0bdfc38c1f3fbe57ecf4b333831a8443aa23c0aa56ac72b3b",
+      "engine": "opentdb",
+      "source": "Open Trivia Database (https://opentdb.com)",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "path": "imported/opentdb/general/medium.jsonl",
+      "category": "general",
+      "difficulty": "medium",
+      "count": 136,
+      "bytes": 39419,
+      "sha256": "39b415b1840b8e1c2c8d5a4aa5104373bc0c07415ffc7728812e461b1bde5678",
+      "engine": "opentdb",
+      "source": "Open Trivia Database (https://opentdb.com)",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "path": "imported/opentdb/geography/easy.jsonl",
+      "category": "geography",
+      "difficulty": "easy",
+      "count": 85,
+      "bytes": 22948,
+      "sha256": "51ec7871ace505edd7f2b438018ef9c513084f7e0f2cc8d6aaadd3484d7e5427",
+      "engine": "opentdb",
+      "source": "Open Trivia Database (https://opentdb.com)",
+      "license": "CC BY-SA 4.0"
     },
     {
       "path": "imported/wikidata/geography/easy.jsonl",
@@ -40,7 +443,21 @@
       "difficulty": "easy",
       "count": 143,
       "bytes": 30522,
-      "sha256": "f17d2e76911ef9e7e15de116aba7a86416d2b9ce2ce75d79ecd603d2ea3d8b43"
+      "sha256": "f17d2e76911ef9e7e15de116aba7a86416d2b9ce2ce75d79ecd603d2ea3d8b43",
+      "engine": "wikidata",
+      "source": "Wikidata",
+      "license": "CC0"
+    },
+    {
+      "path": "imported/opentdb/geography/hard.jsonl",
+      "category": "geography",
+      "difficulty": "hard",
+      "count": 76,
+      "bytes": 21426,
+      "sha256": "057e15a2a060dda17796d37cfe77c5a292b445958b66dd9697368dd1f41c0035",
+      "engine": "opentdb",
+      "source": "Open Trivia Database (https://opentdb.com)",
+      "license": "CC BY-SA 4.0"
     },
     {
       "path": "imported/wikidata/geography/hard.jsonl",
@@ -48,7 +465,21 @@
       "difficulty": "hard",
       "count": 276,
       "bytes": 61760,
-      "sha256": "c5e5b873ddc03924aeb56d7d677f7d118cfe3d324b7387f0079476252d09108f"
+      "sha256": "c5e5b873ddc03924aeb56d7d677f7d118cfe3d324b7387f0079476252d09108f",
+      "engine": "wikidata",
+      "source": "Wikidata",
+      "license": "CC0"
+    },
+    {
+      "path": "imported/opentdb/geography/medium.jsonl",
+      "category": "geography",
+      "difficulty": "medium",
+      "count": 148,
+      "bytes": 40627,
+      "sha256": "ede71d3326bad6929f7b224b830a024f2b241959ff2c6ab81f9b624b618b46d4",
+      "engine": "opentdb",
+      "source": "Open Trivia Database (https://opentdb.com)",
+      "license": "CC BY-SA 4.0"
     },
     {
       "path": "imported/wikidata/geography/medium.jsonl",
@@ -56,7 +487,21 @@
       "difficulty": "medium",
       "count": 253,
       "bytes": 53781,
-      "sha256": "a20dc8bbf202a7d8f7d215704b89a57d75384b32141acd697d3a32aabf43e612"
+      "sha256": "a20dc8bbf202a7d8f7d215704b89a57d75384b32141acd697d3a32aabf43e612",
+      "engine": "wikidata",
+      "source": "Wikidata",
+      "license": "CC0"
+    },
+    {
+      "path": "imported/opentdb/history/easy.jsonl",
+      "category": "history",
+      "difficulty": "easy",
+      "count": 79,
+      "bytes": 22421,
+      "sha256": "e37552f551fcef351e63f73faba3297abc3cf8fc915298a97563ba02336c0664",
+      "engine": "opentdb",
+      "source": "Open Trivia Database (https://opentdb.com)",
+      "license": "CC BY-SA 4.0"
     },
     {
       "path": "imported/wikidata/history/easy.jsonl",
@@ -64,7 +509,21 @@
       "difficulty": "easy",
       "count": 1026,
       "bytes": 230396,
-      "sha256": "b873e49e992d3c07a8d18b3aaa067dbe535eca19a6d01d7efb84b4652e6780c6"
+      "sha256": "b873e49e992d3c07a8d18b3aaa067dbe535eca19a6d01d7efb84b4652e6780c6",
+      "engine": "wikidata",
+      "source": "Wikidata",
+      "license": "CC0"
+    },
+    {
+      "path": "imported/opentdb/history/hard.jsonl",
+      "category": "history",
+      "difficulty": "hard",
+      "count": 94,
+      "bytes": 28112,
+      "sha256": "2288085c093eaffca177cc62e5a25ae6fea98f47bff0e9ba63246741235b4aa5",
+      "engine": "opentdb",
+      "source": "Open Trivia Database (https://opentdb.com)",
+      "license": "CC BY-SA 4.0"
     },
     {
       "path": "imported/wikidata/history/hard.jsonl",
@@ -72,7 +531,21 @@
       "difficulty": "hard",
       "count": 2194,
       "bytes": 494111,
-      "sha256": "039ee48c6cd122d8c077f549720da39a2a69ca370626966749335e4a7f663093"
+      "sha256": "039ee48c6cd122d8c077f549720da39a2a69ca370626966749335e4a7f663093",
+      "engine": "wikidata",
+      "source": "Wikidata",
+      "license": "CC0"
+    },
+    {
+      "path": "imported/opentdb/history/medium.jsonl",
+      "category": "history",
+      "difficulty": "medium",
+      "count": 181,
+      "bytes": 53369,
+      "sha256": "9cba5ccd3236d8bbd1b1269954480bac58572ce44c02aeeb8a7f474581d91eaa",
+      "engine": "opentdb",
+      "source": "Open Trivia Database (https://opentdb.com)",
+      "license": "CC BY-SA 4.0"
     },
     {
       "path": "imported/wikidata/history/medium.jsonl",
@@ -80,7 +553,186 @@
       "difficulty": "medium",
       "count": 1760,
       "bytes": 396932,
-      "sha256": "cb8c9971ec19cc425c63e840f99662c53903c0c9818a114fd5780a0054860030"
+      "sha256": "cb8c9971ec19cc425c63e840f99662c53903c0c9818a114fd5780a0054860030",
+      "engine": "wikidata",
+      "source": "Wikidata",
+      "license": "CC0"
+    },
+    {
+      "path": "imported/opentdb/literature/easy.jsonl",
+      "category": "literature",
+      "difficulty": "easy",
+      "count": 30,
+      "bytes": 9268,
+      "sha256": "29647aa6ca6de07c0fc862ef1b0f4d6457ae62cabd5948b59ddb8a434168402d",
+      "engine": "opentdb",
+      "source": "Open Trivia Database (https://opentdb.com)",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "path": "imported/opentdb/literature/hard.jsonl",
+      "category": "literature",
+      "difficulty": "hard",
+      "count": 25,
+      "bytes": 7627,
+      "sha256": "c408de0996a436b0167437e39ec2ec92e8eb8ec2212856c51f19fe6cc897ee87",
+      "engine": "opentdb",
+      "source": "Open Trivia Database (https://opentdb.com)",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "path": "imported/opentdb/literature/medium.jsonl",
+      "category": "literature",
+      "difficulty": "medium",
+      "count": 51,
+      "bytes": 15835,
+      "sha256": "6e26611b8378fcca76eead2644b4ac8e7dbcdd5bda198b475b3c0fde9a3c3344",
+      "engine": "opentdb",
+      "source": "Open Trivia Database (https://opentdb.com)",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "path": "imported/opentdb/mathematics/easy.jsonl",
+      "category": "mathematics",
+      "difficulty": "easy",
+      "count": 21,
+      "bytes": 5643,
+      "sha256": "e6879b7dd1355f8e5e117e6374c80326d1d7ab030a36a623d79360499b634e03",
+      "engine": "opentdb",
+      "source": "Open Trivia Database (https://opentdb.com)",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "path": "imported/opentdb/mathematics/hard.jsonl",
+      "category": "mathematics",
+      "difficulty": "hard",
+      "count": 16,
+      "bytes": 4914,
+      "sha256": "402852e068901782b0e4f3be8df8045c13b2a234a35426ad8be6d25d11487276",
+      "engine": "opentdb",
+      "source": "Open Trivia Database (https://opentdb.com)",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "path": "imported/opentdb/mathematics/medium.jsonl",
+      "category": "mathematics",
+      "difficulty": "medium",
+      "count": 20,
+      "bytes": 5457,
+      "sha256": "28c99e9a779a74a1f42a38bd73021af025e32b1667992b12a6de875b03a8c551",
+      "engine": "opentdb",
+      "source": "Open Trivia Database (https://opentdb.com)",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "path": "imported/opentdb/music/easy.jsonl",
+      "category": "music",
+      "difficulty": "easy",
+      "count": 119,
+      "bytes": 34111,
+      "sha256": "8c37e4d59ca9a855e53a617663fa1e07f08cfff40652213ae5f59b03d67413f7",
+      "engine": "opentdb",
+      "source": "Open Trivia Database (https://opentdb.com)",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "path": "imported/opentdb/music/hard.jsonl",
+      "category": "music",
+      "difficulty": "hard",
+      "count": 82,
+      "bytes": 25096,
+      "sha256": "c0f621f6fe06c944e6d9fad39baa31b7f5157b06e099556b946cceb78ba01bf5",
+      "engine": "opentdb",
+      "source": "Open Trivia Database (https://opentdb.com)",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "path": "imported/opentdb/music/medium.jsonl",
+      "category": "music",
+      "difficulty": "medium",
+      "count": 235,
+      "bytes": 68966,
+      "sha256": "31d102aa2b1234a669cd563398f1835778992b3a28bca070d170ea9933ae80d8",
+      "engine": "opentdb",
+      "source": "Open Trivia Database (https://opentdb.com)",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "path": "imported/opentdb/mythology/easy.jsonl",
+      "category": "mythology",
+      "difficulty": "easy",
+      "count": 18,
+      "bytes": 5208,
+      "sha256": "102c0dacd4cc2570a1446ccdfca42f5854ad9c99ad68db92e36f38c0bac66a48",
+      "engine": "opentdb",
+      "source": "Open Trivia Database (https://opentdb.com)",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "path": "imported/opentdb/mythology/hard.jsonl",
+      "category": "mythology",
+      "difficulty": "hard",
+      "count": 12,
+      "bytes": 3530,
+      "sha256": "ef2a3a30bbcd1d081c5de4c9d95a6d3d2f607da776c608ca3a9310b832d80ddf",
+      "engine": "opentdb",
+      "source": "Open Trivia Database (https://opentdb.com)",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "path": "imported/opentdb/mythology/medium.jsonl",
+      "category": "mythology",
+      "difficulty": "medium",
+      "count": 27,
+      "bytes": 7472,
+      "sha256": "a7912d923f21771a08a4c05a6a60a979a611eb7b9f3d58a227efce6c1793f248",
+      "engine": "opentdb",
+      "source": "Open Trivia Database (https://opentdb.com)",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "path": "imported/opentdb/politics/easy.jsonl",
+      "category": "politics",
+      "difficulty": "easy",
+      "count": 10,
+      "bytes": 2887,
+      "sha256": "14ab8438ba2b44a652024b8988bd599391b56f125f8fd1c51baee79d061aec4a",
+      "engine": "opentdb",
+      "source": "Open Trivia Database (https://opentdb.com)",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "path": "imported/opentdb/politics/hard.jsonl",
+      "category": "politics",
+      "difficulty": "hard",
+      "count": 16,
+      "bytes": 5150,
+      "sha256": "2c38b41616950edaa1bb57ded3c93b48e3aa10483015bb199b85b8f28e1ccde1",
+      "engine": "opentdb",
+      "source": "Open Trivia Database (https://opentdb.com)",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "path": "imported/opentdb/politics/medium.jsonl",
+      "category": "politics",
+      "difficulty": "medium",
+      "count": 27,
+      "bytes": 8368,
+      "sha256": "2ff6ff7e69bcdcf525bad0e43a323eb8e5ec6572a8c6531db4be808c81d9ffa9",
+      "engine": "opentdb",
+      "source": "Open Trivia Database (https://opentdb.com)",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "path": "imported/opentdb/science/easy.jsonl",
+      "category": "science",
+      "difficulty": "easy",
+      "count": 68,
+      "bytes": 17691,
+      "sha256": "6784eebb27c5e25c8c4d49b86e55b33ba5c7a4818825a7eaa932196458dcd0f1",
+      "engine": "opentdb",
+      "source": "Open Trivia Database (https://opentdb.com)",
+      "license": "CC BY-SA 4.0"
     },
     {
       "path": "imported/wikidata/science/easy.jsonl",
@@ -88,7 +740,21 @@
       "difficulty": "easy",
       "count": 52,
       "bytes": 10181,
-      "sha256": "d9f7b041baf01fcab60effcfe2f7a646981f255ed2bf11ecd2c1dd1e5d6e0736"
+      "sha256": "d9f7b041baf01fcab60effcfe2f7a646981f255ed2bf11ecd2c1dd1e5d6e0736",
+      "engine": "wikidata",
+      "source": "Wikidata",
+      "license": "CC0"
+    },
+    {
+      "path": "imported/opentdb/science/hard.jsonl",
+      "category": "science",
+      "difficulty": "hard",
+      "count": 73,
+      "bytes": 20992,
+      "sha256": "26d28d42162c869b7e419c471c8ec11517428188415a98276e533e63a7c49b25",
+      "engine": "opentdb",
+      "source": "Open Trivia Database (https://opentdb.com)",
+      "license": "CC BY-SA 4.0"
     },
     {
       "path": "imported/wikidata/science/hard.jsonl",
@@ -96,7 +762,21 @@
       "difficulty": "hard",
       "count": 114,
       "bytes": 22909,
-      "sha256": "3d0fba0fb213212a30e1a1e918ec75cd12d003a3aa57e99df8bf79fed181b8a2"
+      "sha256": "3d0fba0fb213212a30e1a1e918ec75cd12d003a3aa57e99df8bf79fed181b8a2",
+      "engine": "wikidata",
+      "source": "Wikidata",
+      "license": "CC0"
+    },
+    {
+      "path": "imported/opentdb/science/medium.jsonl",
+      "category": "science",
+      "difficulty": "medium",
+      "count": 104,
+      "bytes": 29128,
+      "sha256": "130a5c6c6f80c1da7c1f9ff8b3d4e4d166728e437902644a8488a0a8b6f50a47",
+      "engine": "opentdb",
+      "source": "Open Trivia Database (https://opentdb.com)",
+      "license": "CC BY-SA 4.0"
     },
     {
       "path": "imported/wikidata/science/medium.jsonl",
@@ -104,7 +784,175 @@
       "difficulty": "medium",
       "count": 82,
       "bytes": 16188,
-      "sha256": "8992bb513ba57d2cb2847175059006f4327f9a94ef1e121e35ff8491dc8c3433"
+      "sha256": "8992bb513ba57d2cb2847175059006f4327f9a94ef1e121e35ff8491dc8c3433",
+      "engine": "wikidata",
+      "source": "Wikidata",
+      "license": "CC0"
+    },
+    {
+      "path": "imported/opentdb/sports/easy.jsonl",
+      "category": "sports",
+      "difficulty": "easy",
+      "count": 55,
+      "bytes": 15361,
+      "sha256": "6dca5832fb0856d319e7920d2c259499cec31bd8678c1fad2b601a3f22a4a553",
+      "engine": "opentdb",
+      "source": "Open Trivia Database (https://opentdb.com)",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "path": "imported/opentdb/sports/hard.jsonl",
+      "category": "sports",
+      "difficulty": "hard",
+      "count": 28,
+      "bytes": 8182,
+      "sha256": "46377ee95c1672cfb540def5d84df016ef24c641bcb925c8e2651495aacc4e75",
+      "engine": "opentdb",
+      "source": "Open Trivia Database (https://opentdb.com)",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "path": "imported/opentdb/sports/medium.jsonl",
+      "category": "sports",
+      "difficulty": "medium",
+      "count": 77,
+      "bytes": 22275,
+      "sha256": "39f168b079fd582275b3ee99e653d315e2b27cf9ef6dd3b13da8d016a35b0615",
+      "engine": "opentdb",
+      "source": "Open Trivia Database (https://opentdb.com)",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "path": "imported/opentdb/television/easy.jsonl",
+      "category": "television",
+      "difficulty": "easy",
+      "count": 65,
+      "bytes": 19374,
+      "sha256": "01f559578e368cfbc44a016eac91899a0a1ef5624fbd6c0ddff60a91fcf6ad80",
+      "engine": "opentdb",
+      "source": "Open Trivia Database (https://opentdb.com)",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "path": "imported/opentdb/television/hard.jsonl",
+      "category": "television",
+      "difficulty": "hard",
+      "count": 30,
+      "bytes": 9601,
+      "sha256": "5f19446a109e4c46f74fe26028470a69a002e64024f7bef9bf3d1738f809110c",
+      "engine": "opentdb",
+      "source": "Open Trivia Database (https://opentdb.com)",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "path": "imported/opentdb/television/medium.jsonl",
+      "category": "television",
+      "difficulty": "medium",
+      "count": 77,
+      "bytes": 23350,
+      "sha256": "e4af63ecf723259c7e7062221b2e388fb528f575f4e094a011d47f4d2fcd6e32",
+      "engine": "opentdb",
+      "source": "Open Trivia Database (https://opentdb.com)",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "path": "imported/opentdb/theatre/easy.jsonl",
+      "category": "theatre",
+      "difficulty": "easy",
+      "count": 8,
+      "bytes": 2242,
+      "sha256": "cdb80d480cff34582d9d26a2eaa497274a53720535c1a23d3e871e2f1ed6cb95",
+      "engine": "opentdb",
+      "source": "Open Trivia Database (https://opentdb.com)",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "path": "imported/opentdb/theatre/hard.jsonl",
+      "category": "theatre",
+      "difficulty": "hard",
+      "count": 10,
+      "bytes": 3050,
+      "sha256": "2158e1b06b91c38662ab1ec0ee7708aee01d1f9e5d380820527ffc1196f5874c",
+      "engine": "opentdb",
+      "source": "Open Trivia Database (https://opentdb.com)",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "path": "imported/opentdb/theatre/medium.jsonl",
+      "category": "theatre",
+      "difficulty": "medium",
+      "count": 14,
+      "bytes": 4102,
+      "sha256": "12d20219ee9f8762b9ec5e082728f82917731972ef2ebc42e0671b82f7b5b62e",
+      "engine": "opentdb",
+      "source": "Open Trivia Database (https://opentdb.com)",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "path": "imported/opentdb/vehicles/easy.jsonl",
+      "category": "vehicles",
+      "difficulty": "easy",
+      "count": 24,
+      "bytes": 6434,
+      "sha256": "989278d4131da3f51264628a7cfa72f45af1feadc5c6beac271125f3110a3d12",
+      "engine": "opentdb",
+      "source": "Open Trivia Database (https://opentdb.com)",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "path": "imported/opentdb/vehicles/hard.jsonl",
+      "category": "vehicles",
+      "difficulty": "hard",
+      "count": 18,
+      "bytes": 5166,
+      "sha256": "8e140ddccf6253785ca9916ae1f57dc31fe93743996cd84fb80349378605669c",
+      "engine": "opentdb",
+      "source": "Open Trivia Database (https://opentdb.com)",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "path": "imported/opentdb/vehicles/medium.jsonl",
+      "category": "vehicles",
+      "difficulty": "medium",
+      "count": 27,
+      "bytes": 7720,
+      "sha256": "cf9e687cee530883c857bc07a0c1f3b30ce883b12d8d93521d93330c819cb1d5",
+      "engine": "opentdb",
+      "source": "Open Trivia Database (https://opentdb.com)",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "path": "imported/opentdb/videogames/easy.jsonl",
+      "category": "videogames",
+      "difficulty": "easy",
+      "count": 309,
+      "bytes": 89924,
+      "sha256": "30b7a1b93791e2764ae15bfd66a774e63fd60a32d7ba906fec4091e880f555e6",
+      "engine": "opentdb",
+      "source": "Open Trivia Database (https://opentdb.com)",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "path": "imported/opentdb/videogames/hard.jsonl",
+      "category": "videogames",
+      "difficulty": "hard",
+      "count": 211,
+      "bytes": 65350,
+      "sha256": "9a5d84de983c3d9f60bd5bfbc32dc82b0761129fab91469aeaf4e1a616050e2d",
+      "engine": "opentdb",
+      "source": "Open Trivia Database (https://opentdb.com)",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "path": "imported/opentdb/videogames/medium.jsonl",
+      "category": "videogames",
+      "difficulty": "medium",
+      "count": 487,
+      "bytes": 146722,
+      "sha256": "5390946975be96d56aaaf85b1603056c907badc0208be70be7153bfb3a70a737",
+      "engine": "opentdb",
+      "source": "Open Trivia Database (https://opentdb.com)",
+      "license": "CC BY-SA 4.0"
     }
   ]
 }

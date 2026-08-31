@@ -338,14 +338,23 @@ def to_questions(
 
 
 def assemble(
-    questions: list[Question], *, seed: int = 1
+    questions: list[Question],
+    *,
+    seed: int = 1,
+    id_offsets: dict[tuple[str, str], int] | None = None,
 ) -> dict[tuple[str, str], list[Question]]:
     """Bucket by (category, difficulty), balance answer positions, assign ids.
 
     Order is fixed by normalised question text: OpenTDB rows have no natural
     key, and the Worker bakes global indexes from file order, so a re-import is
     a deliberate bank-version bump (same as re-running Engine A).
+
+    `id_offsets[(category, difficulty)]` is the number of questions Engine A
+    already put in that cell; the imported ids continue after it (`sci-e-0053`
+    follows Engine A's `sci-e-0052`) so every id is unique bank-wide even though
+    both engines feed the `science` category.
     """
+    offsets = id_offsets or {}
     rng = random.Random(f"opentdb:{seed}")
     buckets: dict[tuple[str, str], list[Question]] = {}
     for q in questions:
@@ -355,7 +364,8 @@ def assemble(
     for key, items in sorted(buckets.items()):
         items.sort(key=lambda q: normalize(q.q))
         positions = balanced_positions(len(items), rng)
-        for index, (q, slot) in enumerate(zip(items, positions), start=1):
+        start = offsets.get(key, 0) + 1
+        for index, (q, slot) in enumerate(zip(items, positions), start=start):
             answer, wrong = q.o[0], q.o[1:]
             q.o = place_answer(answer, wrong, slot)
             q.a = slot

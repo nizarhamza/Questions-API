@@ -2,7 +2,7 @@
 // provenance that OpenTDB's schema has nowhere to put.
 
 import {
-  BANK_VERSION, CATEGORIES, GENERATED, PATTERNS, SOURCE, TOTAL,
+  BANK_VERSION, CATEGORIES, GENERATED, PATTERNS, SOURCE, SOURCES, TOTAL,
   countPool, getQuestion, getQuestionByIndex, resolveCategory, resolveDifficulty,
   type Question,
 } from "../bank";
@@ -242,7 +242,8 @@ export function handleStats(): Response {
       bank_version: BANK_VERSION,
       generated: GENERATED,
       source: SOURCE,
-      license: "CC0 (Wikidata)",
+      sources: SOURCES,
+      license: SOURCES.join("; ") || "CC0 (Wikidata)",
       categories: Object.fromEntries(CATEGORIES.map((c) => [c.slug, c.counts])),
       patterns: Object.fromEntries(PATTERNS.map((p) => [p, countPool({ pattern: p })])),
     },
