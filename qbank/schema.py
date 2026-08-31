@@ -20,6 +20,34 @@ CATEGORY_CODES = {
     "history": "his",
 }
 
+# Engine C imports questions in categories Engine A never produces (OpenTDB has
+# ~24). These codes are purely additive -- they never renumber a category that
+# already exists -- so the "locked" rule on CATEGORY_CODES still holds. Kept in
+# a separate table so the provenance of a code is obvious at a glance. The
+# numeric ids these slugs map to live in api/scripts/build-data.mjs (CATEGORY_META)
+# and in qbank/opentdb.py (OTDB_CATEGORIES); keep the three in step.
+IMPORTED_CATEGORY_CODES = {
+    "general": "gen",
+    "theatre": "thr",
+    "television": "tel",
+    "videogames": "vgm",
+    "boardgames": "bgm",
+    "computers": "cmp",
+    "mathematics": "mth",
+    "mythology": "myt",
+    "sports": "spo",
+    "politics": "pol",
+    "celebrities": "cel",
+    "animals": "ani",
+    "vehicles": "veh",
+    "comics": "cmc",
+    "gadgets": "gad",
+    "anime": "anm",
+    "cartoons": "crt",
+}
+
+_ALL_CATEGORY_CODES = {**CATEGORY_CODES, **IMPORTED_CATEGORY_CODES}
+
 
 @dataclass
 class Question:
@@ -49,7 +77,7 @@ class Question:
 
 
 def make_id(category: str, difficulty: str, index: int) -> str:
-    code = CATEGORY_CODES.get(category, category[:3].lower())
+    code = _ALL_CATEGORY_CODES.get(category, category[:3].lower())
     return f"{code}-{difficulty[0]}-{index:04d}"
 
 

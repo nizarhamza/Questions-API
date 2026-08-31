@@ -21,26 +21,48 @@ const outFile = join(here, "..", "src", "data", "bank.json");
 const DIFFICULTY_ORDER = ["easy", "medium", "hard"];
 
 // OpenTDB's own numeric category ids, so a client pointed at this API instead of
-// opentdb.com keeps working with the category numbers it already hardcodes.
+// opentdb.com keeps working with the category numbers it already hardcodes. The
+// first eight are what Engine A can produce; the rest only appear once Engine C
+// (`qbank import`) has run. Kept in step with qbank/opentdb.py OTDB_CATEGORIES
+// and qbank/schema.py category codes.
 const CATEGORY_META = {
-  geography:  { opentdb_id: 22, name: "Geography" },
-  science:    { opentdb_id: 17, name: "Science & Nature" },
-  film:       { opentdb_id: 11, name: "Entertainment: Film" },
-  history:    { opentdb_id: 23, name: "History" },
-  music:      { opentdb_id: 12, name: "Entertainment: Music" },
-  literature: { opentdb_id: 10, name: "Entertainment: Books" },
-  art:        { opentdb_id: 25, name: "Art" },
-  general:    { opentdb_id:  9, name: "General Knowledge" },
+  general:     { opentdb_id:  9, name: "General Knowledge" },
+  literature:  { opentdb_id: 10, name: "Entertainment: Books" },
+  film:        { opentdb_id: 11, name: "Entertainment: Film" },
+  music:       { opentdb_id: 12, name: "Entertainment: Music" },
+  theatre:     { opentdb_id: 13, name: "Entertainment: Musicals & Theatres" },
+  television:  { opentdb_id: 14, name: "Entertainment: Television" },
+  videogames:  { opentdb_id: 15, name: "Entertainment: Video Games" },
+  boardgames:  { opentdb_id: 16, name: "Entertainment: Board Games" },
+  science:     { opentdb_id: 17, name: "Science & Nature" },
+  computers:   { opentdb_id: 18, name: "Science: Computers" },
+  mathematics: { opentdb_id: 19, name: "Science: Mathematics" },
+  mythology:   { opentdb_id: 20, name: "Mythology" },
+  sports:      { opentdb_id: 21, name: "Sports" },
+  geography:   { opentdb_id: 22, name: "Geography" },
+  history:     { opentdb_id: 23, name: "History" },
+  politics:    { opentdb_id: 24, name: "Politics" },
+  art:         { opentdb_id: 25, name: "Art" },
+  celebrities: { opentdb_id: 26, name: "Celebrities" },
+  animals:     { opentdb_id: 27, name: "Animals" },
+  vehicles:    { opentdb_id: 28, name: "Vehicles" },
+  comics:      { opentdb_id: 29, name: "Entertainment: Comics" },
+  gadgets:     { opentdb_id: 30, name: "Science: Gadgets" },
+  anime:       { opentdb_id: 31, name: "Entertainment: Japanese Anime & Manga" },
+  cartoons:    { opentdb_id: 32, name: "Entertainment: Cartoon & Animations" },
 };
 
 const manifest = JSON.parse(readFileSync(join(contentDir, "manifest.json"), "utf8"));
 
 // Deterministic order. Global indexes are baked into session-token bitsets, so a
 // reshuffle here would silently invalidate every live token; sort, never rely on
-// manifest order.
+// manifest order. When two engines both feed one (category, difficulty) cell the
+// path is the final tiebreak, so the order does not depend on manifest layout.
 const shards = [...manifest.shards].sort((a, b) => {
   if (a.category !== b.category) return a.category < b.category ? -1 : 1;
-  return DIFFICULTY_ORDER.indexOf(a.difficulty) - DIFFICULTY_ORDER.indexOf(b.difficulty);
+  const d = DIFFICULTY_ORDER.indexOf(a.difficulty) - DIFFICULTY_ORDER.indexOf(b.difficulty);
+  if (d !== 0) return d;
+  return a.path < b.path ? -1 : a.path > b.path ? 1 : 0;
 });
 
 const categorySlugs = [];
@@ -88,7 +110,9 @@ for (const shard of shards) {
     questions.push([r.id, r.q, r.o, r.a, r.e ?? "", catIndex, diffIndex, patIndex]);
   }
 
-  counts[shard.category][shard.difficulty] = lines.length;
+  // `+=`, not `=`: a cell can be split across engines (Engine A + an OpenTDB
+  // import both writing e.g. geography/easy).
+  counts[shard.category][shard.difficulty] += lines.length;
   counts[shard.category].total += lines.length;
 }
 

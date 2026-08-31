@@ -22,7 +22,8 @@ brief: the things that will bite you.
 pip install -r requirements.txt
 export QBANK_USER_AGENT="YourBank/0.1 (https://github.com/nizarhamza/Questions-API; you@example.com)"
 python3 -m qbank count                 # yield matrix, before building anything
-python3 -m qbank generate              # build the bank into content/
+python3 -m qbank generate              # Engine A: build from Wikidata into content/
+python3 -m qbank import --source opentdb   # Engine C: fold OpenTDB into content/
 python3 -m qbank qa content            # skew, duplicates, bad indices, length tells
 
 # worker (api/)
@@ -49,7 +50,22 @@ sitelink floor. Do not reach for a longer client timeout — the wall is not you
 
 **`build-data.mjs` must never reorder records.** Global bank indexes are baked into
 live session-token bitsets, so a reshuffle silently corrupts every token in flight.
-Shards sort by `(category, difficulty)`; records keep file order.
+Shards sort by `(category, difficulty)` then `path` (a cell can be fed by two
+engines); records keep file order. Re-running `qbank import` reshuffles the
+imported indexes the same way a re-`generate` does — it is a bank-version bump,
+not a routine refresh.
+
+**Engine C (`qbank import`) shares the `content/` tree and merges the manifest.**
+`generate` owns `imported/wikidata/`, `import` owns `imported/opentdb/`, and
+`qbank/manifest.py` rewrites `manifest.json` keeping the other engine's shards.
+OpenTDB is CC BY-SA 4.0: the `imported/opentdb/` tree carries attribution and
+share-alike (per-record `e` string, `NOTICE.md`, per-shard manifest tags) — do
+not treat it as CC0 like the rest of `content/`. OpenTDB rate-limits to ~1
+request / 5s / IP; the client paces itself and caches the raw dump under
+`.cache/opentdb/`. OpenTDB's ~24 categories map 1:1 onto bank categories to keep
+the numeric ids round-tripping; the codes live in three places that must stay in
+step — `IMPORTED_CATEGORY_CODES` (`qbank/schema.py`), `OTDB_CATEGORIES`
+(`qbank/opentdb.py`), `CATEGORY_META` (`api/scripts/build-data.mjs`).
 
 **`CATEGORY_CODES` in `qbank/schema.py` is locked.** Renumbering an existing bank is
 the one migration that is genuinely painful.
