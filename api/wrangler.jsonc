@@ -5,6 +5,12 @@
   "compatibility_date": "2025-08-01",
   "observability": { "enabled": true },
 
+  // `src/data/bank.json` is generated (gitignored), so any bare `wrangler deploy`
+  // on a clean checkout — notably Cloudflare's Git-connected Workers Builds — must
+  // regenerate it first or the bundle can't resolve the import. npm scripts that
+  // don't go through wrangler still guard it themselves via pre-scripts.
+  "build": { "command": "npm run build:data" },
+
   // Session tokens live in a SQLite-backed Durable Object: strongly consistent,
   // and free of the 1-write-per-second-per-key ceiling that rules KV out here.
   "durable_objects": {
