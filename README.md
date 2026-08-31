@@ -37,9 +37,10 @@ second run costs nothing. `--no-cache` forces a refresh.
 
 ```
 content/
-├─ manifest.json                              counts, bytes, sha256 per shard
+├─ manifest.json                              counts, bytes, sha256, engine, licence per shard
 ├─ report.json                                per-pattern and per-filter numbers
-└─ imported/wikidata/<category>/<difficulty>.jsonl
+├─ imported/wikidata/<category>/<difficulty>.jsonl    Engine A
+└─ imported/opentdb/<category>/<difficulty>.jsonl     Engine C (see below)
 ```
 
 One record per line:
@@ -50,9 +51,8 @@ One record per line:
  "e":"Madrid is the capital of Spain.","t":["geography","capital-of"]}
 ```
 
-Wikidata is CC0, so this content carries no share-alike obligation — unlike
-OpenTDB or the Jeopardy archive, which belong in a separate `imported/` tree
-with attribution if you ever add them.
+Wikidata is CC0, so the `imported/wikidata/` tree carries no share-alike
+obligation. The `imported/opentdb/` tree does — see Engine C.
 
 ## How a pattern works
 
@@ -198,14 +198,69 @@ dead. Everything conceptual is Engine B's job (an LLM grounded on fetched source
 text, with a blind verification pass), and that is where the API spend and the
 review time go.
 
+## Engine C — importing an existing bank
+
+Engine A builds facts; Engine C takes someone else's finished questions and
+folds them into the same artifact. One source so far:
+
+```bash
+python3 -m qbank import --source opentdb          # drain an OpenTDB token to exhaustion
+python3 -m qbank import --source opentdb --max-requests 4   # a quick partial pull
+python3 -m qbank qa content/imported/opentdb
+```
+
+**OpenTDB is an import, not a generation.** It ships four-option multiple choice
+with the three wrong answers already attached, so the work is: loop a session
+token until OpenTDB answers `response_code` 4 (so the pull is the whole bank and
+never a repeat), un-escape the HTML entities it encodes by default, map the
+category string onto this bank's taxonomy, take the stated difficulty verbatim,
+and hand the rows to the same assembler Engine A uses for id assignment and
+answer-position balancing. OpenTDB rate-limits an IP to roughly one request
+every five seconds; the client paces under that and caches the whole raw dump
+under `.cache/opentdb/` so a re-run costs nothing (`--no-cache` forces a fetch).
+
+**It brings its own categories.** OpenTDB has ~24 (Sports, Television, Video
+Games, Politics, Mythology, Celebrities, …). Each maps to one bank category so
+the numeric ids still round-trip through the OpenTDB-compatible API surface; the
+seventeen that Engine A never produces get id codes from `IMPORTED_CATEGORY_CODES`
+in `qbank/schema.py` and ids/names from `CATEGORY_META` in
+`api/scripts/build-data.mjs`. Keep those two lists and `OTDB_CATEGORIES` in
+`qbank/opentdb.py` in step.
+
+**Licence: CC BY-SA 4.0.** Unlike the CC0 Wikidata content, the
+`imported/opentdb/` tree carries attribution *and* share-alike. Each record's
+`e` field names the source, `content/imported/opentdb/NOTICE.md` spells out the
+obligation, and the manifest tags every imported shard with its `engine`,
+`source` and `license`.
+
+**Re-importing is a bank-version bump,** same as re-running Engine A: rows are
+ordered by normalised question text and the Worker bakes global indexes from
+file order, so a fresh import reshuffles indexes and invalidates live session
+tokens. Run it deliberately.
+
+`manifest.json` is merged, not overwritten: `generate` owns the `wikidata`
+shards and `import` owns the `opentdb` shards, and each rewrite keeps the
+other's.
+
+The Jeopardy archive (~216k open-ended clues) is the planned second source. It
+needs a distractor-generation pass — the clean fit is Engine A's sibling
+approach, drawing wrong answers from other clues in the same Jeopardy
+category — and its licensing is murky enough (scraped from J-Archive) to keep it
+opt-in and out of any commercial release.
+
 ## QA
 
-`python3 -m qbank qa content` checks each output file for answer-position skew
-above 10%, duplicate options, out-of-range answer indices, length tells, and
-duplicate questions. It exits non-zero on failure, so it drops straight into CI.
+`python3 -m qbank qa content` checks each output file for answer-position skew,
+duplicate options, out-of-range answer indices, length tells, and duplicate
+questions. It exits non-zero on failure, so it drops straight into CI.
 
 Positions are assigned from a balanced shuffled sequence at write time, so skew
 should be near zero by construction — the check is there to catch regressions.
+The skew bound tolerates an absolute deviation of one (you cannot split nine
+questions four ways any more evenly), which matters for the small cells an
+import can produce. For imported shards the **length-tell rate is reported, not
+failed**: a fixed set of three distractors from someone else's bank is a fact
+about that source, not a defect this pipeline can fix.
 
 `report.json` carries the per-pattern funnel: rows fetched, then how many each
 filter removed, then what survived. When a pattern's yield looks wrong, that file
@@ -232,6 +287,10 @@ the whole bank or fails to deploy. See `api/README.md`.
 
 ## Licence
 
-The generator code is MIT (see `LICENSE`). The generated bank under `content/`
-is derived from Wikidata, which is CC0, so the questions carry no share-alike
-obligation — attribution to Wikidata is courtesy, not a licence term.
+The generator code is MIT (see `LICENSE`).
+
+- **`content/imported/wikidata/`** (Engine A) is derived from Wikidata, which is
+  CC0: no share-alike obligation, attribution a courtesy.
+- **`content/imported/opentdb/`** (Engine C) is from the Open Trivia Database and
+  is **CC BY-SA 4.0**: credit OpenTDB, and redistribute derivatives under the
+  same licence. See `content/imported/opentdb/NOTICE.md`.

@@ -134,8 +134,18 @@ def balanced_positions(total: int, rng: random.Random, slots: int = 4) -> list[i
 
     Models favour index 0 and 2; templated banks favour whatever the code does.
     Assigning positions from a balanced sequence removes the tell entirely.
+
+    Each slot gets `total // slots`; the `total % slots` left over go to a
+    contiguous run of slots starting at a random offset. Spreading the remainder
+    matters when a cell is small -- an imported OpenTDB category can have nine
+    questions -- where truncating a per-slot block would drop the last slot
+    entirely and put a hard skew into the file.
     """
-    reps = (total + slots - 1) // slots
-    positions = [i for i in range(slots) for _ in range(reps)][:total]
+    base, extra = divmod(total, slots)
+    counts = [base] * slots
+    start = rng.randrange(slots)
+    for k in range(extra):
+        counts[(start + k) % slots] += 1
+    positions = [slot for slot, n in enumerate(counts) for _ in range(n)]
     rng.shuffle(positions)
     return positions

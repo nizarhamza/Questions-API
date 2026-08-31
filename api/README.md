@@ -191,7 +191,12 @@ Two honest differences:
   six fields.
 
 Category ids are OpenTDB's own — geography `22`, history `23`, film `11`, science
-`17` — so a client's hardcoded numbers keep pointing at the right thing.
+`17` — so a client's hardcoded numbers keep pointing at the right thing. If the
+bank was built with Engine C (`qbank import --source opentdb`) it also carries
+the rest of OpenTDB's categories (Sports `21`, Television `14`, Video Games `15`,
+Politics `24`, …), each on its own OpenTDB id. Those questions are imported under
+**CC BY-SA 4.0** — see `content/imported/opentdb/NOTICE.md` — and every one names
+its source in the `explanation` field.
 
 ## Using it from Flutter
 
@@ -266,4 +271,6 @@ api/
 └─ test/api.test.ts
 ```
 
-Content is CC0 (Wikidata). API code is MIT.
+API code is MIT. Content is CC0 where it comes from Wikidata
+(`content/imported/wikidata/`) and CC BY-SA 4.0 where it comes from the Open
+Trivia Database (`content/imported/opentdb/`, added by Engine C).
